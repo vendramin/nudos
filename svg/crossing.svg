@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="97.816269"
+   height="96.209488"
+   id="svg3070"
+   version="1.1"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="crossing.svg">
+  <defs
+     id="defs3072">
+    <marker
+       id="arrow"
+       viewBox="0 0 10 6"
+       markerUnits="userSpaceOnUse"
+       refX="10"
+       refY="3"
+       markerWidth="49.497002"
+       markerHeight="20"
+       orient="auto"
+       style="stroke-linecap:butt;stroke-linejoin:miter">
+      <polygon
+         points="0,6 10,3 0,0 "
+         id="polygon3870"
+         style="fill:#000000;stroke:#000000;stroke-width:0.40000001" />
+    </marker>
+    <marker
+       id="marker3055"
+       viewBox="0 0 10 6"
+       markerUnits="userSpaceOnUse"
+       refX="10"
+       refY="3"
+       markerWidth="49.497002"
+       markerHeight="20"
+       orient="auto"
+       style="stroke-linecap:butt;stroke-linejoin:miter">
+      <polygon
+         points="0,6 10,3 0,0 "
+         id="polygon3057"
+         style="fill:#000000;stroke:#000000;stroke-width:0.40000001" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="49.207807"
+     inkscape:cy="48.908129"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="0"
+     inkscape:window-y="29"
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3220"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3075">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-325.79219,-485.06083)">
+    <g
+       style="fill:none;stroke:#000000;stroke-width:3.31999993;stroke-miterlimit:4;stroke-dasharray:none"
+       transform="matrix(0.60240964,0,0,0.60240964,314.45936,472.12122)"
+       id="line_cont-8">
+      <line
+         x1="20"
+         y1="180"
+         x2="170"
+         y2="30"
+         id="line4031"
+         style="stroke-width:3.31999993;stroke-miterlimit:4;stroke-dasharray:none" />
+    </g>
+    <g
+       style="fill:none;stroke:#000000;stroke-width:3.31999993;stroke-miterlimit:4;stroke-dasharray:none"
+       transform="matrix(0.60240964,0,0,0.60240964,314.45936,472.12122)"
+       id="line_cut-7">
+      <line
+         x1="180"
+         y1="180"
+         x2="110"
+         y2="110"
+         id="line4036"
+         style="stroke-width:3.31999993;stroke-miterlimit:4;stroke-dasharray:none" />
+      <line
+         x1="90"
+         y1="90"
+         x2="30"
+         y2="30"
+         id="line4038"
+         style="stroke-width:3.31999993;stroke-miterlimit:4;stroke-dasharray:none" />
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4139"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:'URW Bookman L';-inkscape-font-specification:'URW Bookman L Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="translate(387.7302,505.44698)"><flowRegion
+         id="flowRegion4141"><rect
+           id="rect4143"
+           width="34.745762"
+           height="18.220339"
+           x="-1.6949153"
+           y="-18.991465"
+           style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic" /></flowRegion><flowPara
+         id="flowPara4145"
+         style="font-size:14px;line-height:1.25">a</flowPara></flowRoot>
+    <flowRoot
+       transform="translate(402.57128,585.60756)"
+       xml:space="preserve"
+       id="flowRoot4139-80"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:'URW Bookman L';-inkscape-font-specification:'URW Bookman L Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+         id="flowRegion4141-67"><rect
+           id="rect4143-85"
+           width="34.745762"
+           height="18.220339"
+           x="-1.6949153"
+           y="-18.991465"
+           style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic" /></flowRegion><flowPara
+         id="flowPara4145-8"
+         style="font-size:14px;line-height:1.25">b</flowPara></flowRoot>
+    <flowRoot
+       transform="translate(344.05851,503.69951)"
+       xml:space="preserve"
+       id="flowRoot4139-2"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:'URW Bookman L';-inkscape-font-specification:'URW Bookman L Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+         id="flowRegion4141-6"><rect
+           id="rect4143-8"
+           width="34.745762"
+           height="18.220339"
+           x="-1.6949153"
+           y="-18.991465"
+           style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic" /></flowRegion><flowPara
+         id="flowPara4145-5"
+         style="font-size:14px;line-height:1.25">c</flowPara></flowRoot>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 400.83663,497.13451 15.9099,-7.07107 -4.79822,16.16244"
+       id="path15310"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+  </g>
+</svg>

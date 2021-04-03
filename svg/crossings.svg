@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 125.3267 70.0812"
+   version="1.1"
+   width="250.65341"
+   height="140.1624"
+   id="svg3863"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="crossings.svg">
+  <metadata
+     id="metadata3886">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Knot crossing minus symbol</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="848"
+     id="namedview3884"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="2.855579"
+     inkscape:cx="128.68401"
+     inkscape:cy="62.669531"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3863">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3101"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="0.16366901px"
+       originy="0.13136494px" />
+  </sodipodi:namedview>
+  <title
+     id="title3865">Knot crossing minus symbol</title>
+  <defs
+     id="defs3867">
+    <marker
+       id="arrow"
+       viewBox="0 0 10 6"
+       markerUnits="userSpaceOnUse"
+       refX="10"
+       refY="3"
+       markerWidth="49.497002"
+       markerHeight="20"
+       orient="auto"
+       style="stroke-linecap:butt;stroke-linejoin:miter">
+      <polygon
+         points="10,3 0,0 0,6 "
+         id="polygon3870"
+         style="fill:#000000;stroke:#000000;stroke-width:0.40000001" />
+    </marker>
+    <marker
+       style="stroke-linecap:butt;stroke-linejoin:miter"
+       id="arrow-9"
+       viewBox="0 0 10 6"
+       markerUnits="userSpaceOnUse"
+       refX="10"
+       refY="3"
+       markerWidth="49.497002"
+       markerHeight="20"
+       orient="auto">
+      <polygon
+         style="fill:#000000;stroke:#000000;stroke-width:0.40000001"
+         points="0,6 10,3 0,0 "
+         id="polygon4028" />
+    </marker>
+    <marker
+       style="stroke-linecap:butt;stroke-linejoin:miter"
+       id="marker4058"
+       viewBox="0 0 10 6"
+       markerUnits="userSpaceOnUse"
+       refX="10"
+       refY="3"
+       markerWidth="49.497002"
+       markerHeight="20"
+       orient="auto">
+      <polygon
+         style="fill:#000000;stroke:#000000;stroke-width:0.40000001"
+         points="0,6 10,3 0,0 "
+         id="polygon4060" />
+    </marker>
+  </defs>
+  <g
+     id="line_cont"
+     transform="matrix(0.30120482,0,0,0.30120482,-5.1892518,1.952084)"
+     style="fill:none;stroke:#000000;stroke-width:3.32000001;stroke-miterlimit:4;stroke-dasharray:none">
+    <line
+       x1="180"
+       y1="180"
+       x2="30"
+       y2="30"
+       id="line3873"
+       style="stroke-width:3.32000001;stroke-miterlimit:4;stroke-dasharray:none" />
+    <line
+       x1="30"
+       y1="30"
+       x2="20"
+       y2="20"
+       id="line3875"
+       style="stroke-width:3.32000001;marker-end:url(#arrow);stroke-miterlimit:4;stroke-dasharray:none" />
+  </g>
+  <g
+     id="line_cut"
+     transform="matrix(0.30120482,0,0,0.30120482,-5.1892518,1.952084)"
+     style="fill:none;stroke:#000000;stroke-width:3.32000001;stroke-miterlimit:4;stroke-dasharray:none">
+    <line
+       x1="20"
+       y1="180"
+       x2="90"
+       y2="110"
+       id="line3878"
+       style="stroke-width:3.32000001;stroke-miterlimit:4;stroke-dasharray:none" />
+    <line
+       x1="110"
+       y1="90"
+       x2="170"
+       y2="30"
+       id="line3880"
+       style="stroke-width:3.32000001;stroke-miterlimit:4;stroke-dasharray:none" />
+    <line
+       x1="170"
+       y1="30"
+       x2="180"
+       y2="20"
+       id="line3882"
+       style="stroke-width:3.32000001;marker-end:url(#arrow);stroke-miterlimit:4;stroke-dasharray:none" />
+  </g>
+  <g
+     style="fill:none;stroke:#000000;stroke-width:3.32000001;stroke-miterlimit:4;stroke-dasharray:none"
+     transform="matrix(0.30120482,0,0,0.30120482,70.111958,1.697945)"
+     id="line_cont-8">
+    <line
+       x1="20"
+       y1="180"
+       x2="170"
+       y2="30"
+       id="line4031"
+       style="stroke-width:3.32000001;stroke-miterlimit:4;stroke-dasharray:none" />
+    <line
+       style="stroke-width:3.32000001;marker-end:url(#arrow);stroke-miterlimit:4;stroke-dasharray:none"
+       x1="170"
+       y1="30"
+       x2="180"
+       y2="20"
+       id="line4033" />
+  </g>
+  <g
+     style="fill:none;stroke:#000000;stroke-width:3.32000001;stroke-miterlimit:4;stroke-dasharray:none"
+     transform="matrix(0.30120482,0,0,0.30120482,70.111958,1.697945)"
+     id="line_cut-7">
+    <line
+       x1="180"
+       y1="180"
+       x2="110"
+       y2="110"
+       id="line4036"
+       style="stroke-width:3.32000001;stroke-miterlimit:4;stroke-dasharray:none" />
+    <line
+       x1="90"
+       y1="90"
+       x2="30"
+       y2="30"
+       id="line4038"
+       style="stroke-width:3.32000001;stroke-miterlimit:4;stroke-dasharray:none" />
+    <line
+       style="stroke-width:3.32000001;marker-end:url(#arrow);stroke-miterlimit:4;stroke-dasharray:none"
+       x1="30"
+       y1="30"
+       x2="20"
+       y2="20"
+       id="line4040" />
+  </g>
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot4096"
+     style="font-size:14px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Medium"
+     transform="matrix(0.5,0,0,0.5,24.319122,-163.07803)"><flowRegion
+       id="flowRegion4098"><rect
+         id="rect4100"
+         width="544.06781"
+         height="130.50847"
+         x="-49.152542"
+         y="449.15256"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Medium" /></flowRegion><flowPara
+       id="flowPara4102">cruce positivo</flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot4104"
+     style="font-size:8px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+     transform="matrix(0.5,0,0,0.5,-9.7910478,-126.42549)"><flowRegion
+       id="flowRegion4106"><rect
+         id="rect4108"
+         width="1049.1526"
+         height="437.28815"
+         x="-54.237289"
+         y="-30.508474" /></flowRegion><flowPara
+       id="flowPara4110" /></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot4096-8"
+     style="font-size:14px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Medium"
+     transform="matrix(0.5,0,0,0.5,99.286678,-162.99591)"><flowRegion
+       id="flowRegion4098-8"><rect
+         id="rect4100-3"
+         width="544.06781"
+         height="130.50847"
+         x="-49.152542"
+         y="449.15256"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Medium" /></flowRegion><flowPara
+       id="flowPara4102-0">cruce negativo</flowPara></flowRoot>  <flowRoot
+     transform="matrix(0.5,0,0,0.5,46.157437,7.0717108)"
+     xml:space="preserve"
+     id="flowRoot4139-8"
+     style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic"><flowRegion
+       id="flowRegion4141-2"><rect
+         id="rect4143-1"
+         width="34.745762"
+         height="18.220339"
+         x="-1.6949153"
+         y="-18.991465"
+         style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic" /></flowRegion><flowPara
+       id="flowPara4145-7">c=a&amp;</flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3295-8"
+     style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic"
+     transform="matrix(0.5,0,0,0.5,-94.030545,-189.39859)"><flowRegion
+       id="flowRegion3297-7"><rect
+         id="rect3299-19"
+         width="31.358953"
+         height="20.091017"
+         x="187.3833"
+         y="374.80237"
+         style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic" /></flowRegion><flowPara
+       id="flowPara3301-9"
+       style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic">a<flowSpan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="flowSpan3004">i</flowSpan></flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3295-8-8"
+     style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic"
+     transform="matrix(0.5,0,0,0.5,25.011914,-189.27118)"><flowRegion
+       id="flowRegion3297-7-5"><rect
+         id="rect3299-19-4"
+         width="31.358953"
+         height="20.091017"
+         x="187.3833"
+         y="374.80237"
+         style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic" /></flowRegion><flowPara
+       id="flowPara3301-9-0"
+       style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic">a<flowSpan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="flowSpan3004-6">i</flowSpan></flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3295-8-7"
+     style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic"
+     transform="matrix(0.5,0,0,0.5,-18.38465,-188.79646)"><flowRegion
+       id="flowRegion3297-7-0"><rect
+         id="rect3299-19-1"
+         width="31.358953"
+         height="20.091017"
+         x="187.3833"
+         y="374.80237"
+         style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic" /></flowRegion><flowPara
+       id="flowPara3301-9-3"
+       style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic">a<flowSpan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="flowSpan3004-4">j</flowSpan></flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3295-8-7-7"
+     style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic"
+     transform="matrix(0.5,0,0,0.5,-93.527459,-146.32975)"><flowRegion
+       id="flowRegion3297-7-0-3"><rect
+         id="rect3299-19-1-8"
+         width="31.358953"
+         height="20.091017"
+         x="187.3833"
+         y="374.80237"
+         style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic" /></flowRegion><flowPara
+       id="flowPara3301-9-3-4"
+       style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic">a<flowSpan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="flowSpan3004-4-3">j</flowSpan></flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3295-8-7-3"
+     style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic"
+     transform="matrix(0.5,0,0,0.5,-52.154266,-189.05309)"><flowRegion
+       id="flowRegion3297-7-0-5"><rect
+         id="rect3299-19-1-9"
+         width="31.358953"
+         height="20.091017"
+         x="187.3833"
+         y="374.80237"
+         style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic" /></flowRegion><flowPara
+       id="flowPara3301-9-3-9"
+       style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic">a<flowSpan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="flowSpan3004-4-7">k</flowSpan></flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3295-8-7-3-7"
+     style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic"
+     transform="matrix(0.5,0,0,0.5,23.895451,-147.1976)"><flowRegion
+       id="flowRegion3297-7-0-5-2"><rect
+         id="rect3299-19-1-9-4"
+         width="31.358953"
+         height="20.091017"
+         x="187.3833"
+         y="374.80237"
+         style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic" /></flowRegion><flowPara
+       id="flowPara3301-9-3-9-0"
+       style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic">a<flowSpan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="flowSpan3004-4-7-6">k</flowSpan></flowPara></flowRoot></svg>
