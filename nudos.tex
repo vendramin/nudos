@@ -1,152 +1,95 @@
-\documentclass[autocontact]{gaceta}
-% (* o \documentclass{gaceta} si el art\'{\i}culo no tiene firma *)
+\documentclass[graybox]{svmult}
 
-%---------------------
-%%%%%% NOTA T\'ECNICA (ign\'orala si no la entiendes) %%%%%%
-% Si, en lugar de pdflatex (opci\'on por defecto), vas a usar 
-% latex, puedes reproducir el tama\~no final del papel con el 
-% que se imprimir\'a la Gaceta a\~nadiendo la opci\'on dvips:
-% \documentclass[dvips]{gaceta}
-%---------------------
+\usepackage{caption}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{mathtools}
+\usepackage{mathptmx}       
+\usepackage{helvet}        
+\usepackage{courier}      
+\usepackage{type1cm}     
+\usepackage{listings}                        
+\usepackage{makeidx}    
+\usepackage{graphicx}   
+\usepackage{multicol}        
+\usepackage[bottom]{footmisc}
 
-%---------------------
-% No olvides descargar el archivo gaceta.cls y ponerlo 
-% en la misma carpeta que este documento, o donde LaTeX 
-% lo sepa encontrar.
-% Recuerda que La Gaceta prefiere art\'{\i}culos que 
-% no superen las 20 p\'aginas.
-%---------------------
-
-%---------------------
-% La Gaceta se har\'a con esto activado, 
-% pero no hace falta ahora si no quieres:
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-
-% Puedes usar esto (u otra codificaci\'on) si quieres:
-\usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
-%---------------------
-
-%---------------------
-% Esto ya lo carga el estilo de La Gaceta:
-%\usepackage{amsmath, amsthm, amssymb}
-%\usepackage{url} 
-\usepackage{graphicx}
-%---------------------
-
-%---------------------
-% Carga esto para gr\'aficos si lo necesitas:
-\usepackage{wrapfig}
-%---------------------
-
-%---------------------
-% <<< ESTO SE AJUSTAR\'A AL EDITAR CADA N\'UMERO DE LA GACETA >>>
-\setcounter{page}{1} 
-\journame{La Gaceta de la RSME}
-\yearofpublication{0000}
-\volume{00}
-\issuenumber{0}
-%---------------------
-
-%---------------------
-% Deja esto as\'{\i}:
-\belongstopart{Art\'{\i}culos} 
-%\belongstopart{Secciones} 
-%\belongstopart{Noticias de la Sociedad} 
-%\belongstopart{Actualidad} 
-%\nopart
-%---------------------
-
-
-%---------------------
-% En caso de que el art\'{\i}culo sea de una secci\'on fija,
-% rell\'enalo con el nombre de la secci\'on y su responsable
-% (o no hagas nada si tienes dudas).
-\supertitle{Autoexplicaciones de La Gaceta}
-\editor{Un Responsable de Secci\'on}
-% Opcional:
-% \shortsupertitle{Autoexplicaciones de La Gaceta}
-%---------------------
-
-%---------------------
-\title{Nudos, quandles y homolog\'ia}
-\author{Leandro Vendramin} % o \author{Un Autor y Otro Autor}, etc.
-% \shorttitle{....} % <--- No tiene ning\'un efecto si hay \supertitle
-%---------------------
-
-%---------------------
-\contact{Leandro Vendramin, Department of Mathematics, Vrije Universiteit Brussel, Pleinlaan 2, 1050 Brussel, Belgium}
-{Leandro.Vendramin@vub.be}{https://vendramin.github.io}
-%% SINTAXIS (\'usense tantos de estos como autores haya):
-%\contact{nombre y direcci\'on autor 1}{email autor 1}{p\'agina web autor 1}
-%\contact{nombre y direcci\'on autor 2}{email autor 2}{p\'agina web autor 2}
-% (IMPORTANTE: se puede dejar vac\'{\i}o lo que se quiera)
-%---------------------
-
-\theoremstyle{plain}
-\newtheorem{thm}{Teorema}[section]
-\newtheorem{defn}[thm]{Definición}
-\newtheorem{example}[thm]{Ejemplo}
-\newtheorem{xca}[thm]{Ejercicio}
-\newtheorem{conjecture}[thm]{Conjetura}
-
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\B}{\mathbb{B}}
 \newcommand{\N}{\mathbb{N}}
-\newcommand{\D}{\mathbb{D}}
+\newcommand{\B}{\mathbb{B}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
 \newcommand{\F}{\mathbb{F}}
-\newcommand{\Sym}{\mathbb{S}}
-\newcommand{\Alt}{\mathbb{A}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\T}{\mathbb{T}}
+
+\newcommand{\FK}{\mathcal{E}}
+\newcommand{\NA}{\mathfrak{B}}
+\newcommand{\ad}{\mathrm{ad}}
+\newcommand{\charK}{\mathrm{char}{\K}}
+\newcommand{\supp}{\mathrm{supp}}
+\newcommand{\ydG}{\prescript{G}{G}{\mathcal{YD}}}
+\newcommand{\ydH}{\prescript{H}{H}{\mathcal{YD}}}
+
+%%% Definitions
+\newcommand{\Aff}{\mathrm{Aff}}
+\newcommand{\Rad}{\mathrm{rad}}
+\newcommand{\Inn}{\mathrm{Inn}}
+\newcommand{\Stab}{\mathrm{Stab}}
+\newcommand{\Ext}{\mathrm{Ext}}
+\newcommand{\Img}{\mathrm{Img}}
+\newcommand{\Conj}{\mathrm{Conj}}
+\newcommand{\fix}{\operatorname{fix}}
+\newcommand{\soc}{\operatorname{soc}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\op}{\operatorname{op}}
+\newcommand{\cop}{\operatorname{cop}}
+\newcommand{\rk}{\operatorname{rk}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Irr}{\operatorname{Irr}}
+\newcommand{\img}{\operatorname{img}}
+\newcommand{\GL}{\mathbf{GL}}
 \newcommand{\SL}{\mathbf{SL}}
+\newcommand{\PGL}{\mathrm{PGL}}
+\newcommand{\PSL}{\mathrm{PSL}}
+\newcommand{\PSU}{\mathrm{PSU}}
+\newcommand{\Sz}{\mathrm{Sz}}
+\newcommand{\Ree}{\mathrm{Ree}}
+\newcommand{\Sp}{\mathrm{Sp}}
+\newcommand{\Alt}{\mathbb{A}}
+\newcommand{\Sym}{\mathbb{S}}
+\newcommand{\ord}{\mathrm{ord}}
 
 
-%---------------------------
+\makeindex             
+                      
 \begin{document}
-%---------------------------
 
-%---------------------
-% Descomentar si hay \supertitle y \editor
-\makesupertitle
-%---------------------
+\lstset{language=GAP,
+  showstringspaces=false,
+  xleftmargin=0.0cm,
+  xrightmargin=0.0cm,
+  basicstyle=\small\ttfamily,
+  frame=single,
+  framerule=0pt,
+}
 
-%---------------------
-%%% PARA QUE LO USE EL RESPONSABE DE SECCI\'ON (si lo hubiera) SI QUIERE 
-%%% INCLUIR ALGUNA INTRODUCCI\'ON PEQUE\~NITA:
-\begin{explanation}
-% Una explicaci\'on sobre el art\'{\i}culo que va a ir a continuaci\'on,
-% o lo que el responsable de secci\'on considere oportuno contar aqu\'{\i}.
-% No hay ninguna necesidad de poner esta explicaci\'on; 
-% es s\'olo una posibilidad que algunos desean usar.
+\title*{Nudos, quandles y homología}
+\author{Leandro Vendramin}
+
+\institute{Name of First Author \at Name, Address of Institute, \email{lvendramin@dm.uba.ar}}
+
+\abstract{
 Presentamos una introducción informal a la teoría combinatoria de nudos.
 Discutiremos el grupo fundamental de un nudo, invariantes por coloreo e
 invariantes dados por quandles y homología de quandles.
-\end{explanation}
-%---------------------
+}
 
-
-%---------------------
-%%% EL RESPONSABLE DE LA SECCI\'ON CORRESPONDIENTE PUEDE
-%%% PONER UAN EXPLICACI\'ON MUCHO M\'AS GRANDE (UN PAR
-%%% DE P\'AGINAS) DE ESTA MANERA:
-% \section*{En este n\'umero\dots}
-% En este n\'umero de \textit{La Gaceta}, presentamos\dots
-% \newpage 
-%---------------------
-
-
-%---------------------
 \maketitle
-%---------------------
 
-
-%---------------------
-%%% Se puede poner si se quiere:
-%\section*{Introducci\'on} % (o similar)
-%---------------------
-
-\section*{Introducción}
+\section{Introducción}
 
 Robert Graves\footnote{R. Graves, Los mitos griegos, Alianza Editorial, 1996.}
 cuenta una leyenda griega en la que un oráculo anunció a los habitantes de
@@ -160,10 +103,10 @@ sin vacilación, deshizo el nudo al cortar la cuerda con su espada.  Según se
 dice, esa misma noche, Zeus, con una fuerte tormenta, mostró su aprobación a la
 solución encontrada por Alejandro Magno.
 
-\begin{wrapfigure}{r}{0.2\textwidth}
-	\centering
-	\includegraphics[scale=0.5]{images/rope}
-\end{wrapfigure}
+\begin{figure}
+    \centering
+	\includegraphics[scale=0.6]{images/rope}
+\end{figure}
 
 La teoría de nudos, en principio, intenta entender los nudos que podríamos
 encontrarnos en la vida real. 
@@ -181,11 +124,12 @@ que vemos a la izquierda en la figura~\ref{fig:nudo}. Si pegamos los extremos
 de esa cuerda obtendremos una cuerda anudada que no tiene extremos tal como la
 que vemos a la derecha en la figura~\ref{fig:nudo}.
 
-\begin{wrapfigure}{r}{0.3\textwidth}
-	\includegraphics[scale=0.5]{images/real}
+\begin{figure}
+    \centering
+	\includegraphics[scale=0.7]{images/real}
     \caption{Nudos.}
     \label{fig:nudo}
-\end{wrapfigure}
+\end{figure}
 
 \textquestiondown Puede desatarse ese nudo? Después de varios minutos de
 experimentación se hace más o menos evidente que ese nudo podrá deshacerse
@@ -226,38 +170,38 @@ topológico de distinguir nudos al lenguaje de la combinatoria.
 
 \begin{figure}[h]
 	\centering
-    \includegraphics[scale=0.2]{images/reidemeister}
+    \includegraphics[scale=0.3]{images/reidemeister}
     \caption{Kurt Reidemeister (1893--1971)}
 \end{figure}
 
-\begin{defn}
+\begin{definition}
     \index{Nudo}
     Un nudo (en $\R^3$) es 
 	una función inyectiva y continua $S^1\to\R^3$, donde
 	$S^1=\{(x,y)\in\R^2\mid x^2+y^2=1\}$. 
-\end{defn}
+\end{definition}
 
 En el conjunto de nudos definimos la relación de equivalencia dada por
 \textbf{isotopía}. 
 
-\begin{defn}
+\begin{definition}
 	\index{Equivalencia de nudos}
 	Diremos que los nudos dados por las funciones $\alpha$ y $\beta$ son
 	\textbf{equivalentes} si y sólo si existe una función continua $H\colon
 	S^1\times[0,1]\to\R^3$ tal que la función $H_t\colon z\mapsto H(z,t)$ es un
 	nudo para todo $t\in [0,1]$, $H_0=\alpha$ y $H_1=\beta$. 
-\end{defn}
+\end{definition}
 
 Los nudos pueden ser dotados de una orientación.  Una \textbf{orientación} se
 define eligiendo una dirección para viajar alrededor del nudo. En este artículo
 trabajaremos principalmente con nudos orientados.
 		
-\begin{wrapfigure}{r}{3cm}
+\begin{figure}
 	\centering
-	\includegraphics[scale=0.5]{images/wild}
+	\includegraphics[scale=0.7]{images/wild}
 	\caption{Un ejemplo de nudo salvaje.}
 	\label{fig:wild}
-\end{wrapfigure}
+\end{figure}
 
 	 \index{Nudo!manso}
 	 \index{Nudo!salvaje}
@@ -270,9 +214,9 @@ trabajaremos principalmente con nudos orientados.
 	 será casi imposible diferenciar a nuestra curva de una curva suave.  En
 	 relación con esta observación, mencionamos el siguiente teorema:
 
-    \begin{thm}
+    \begin{theorem}
         Un nudo parametrizado por longitud de arco y de clase $C^1$ es manso.
-    \end{thm}
+    \end{theorem}
 
     \begin{proof}
 		La prueba de este resultado es muy técnica pero sólo utiliza conceptos
@@ -304,7 +248,7 @@ trabajaremos principalmente con nudos orientados.
  
 	\begin{figure}[ht]
         \centering
-    	\includegraphics[scale=0.5]{images/wrongcrossings}
+    	\includegraphics[scale=0.6]{images/wrongcrossings}
         \caption{Cruces no admitidos en el diagrama de un nudo dado por una
         poligonal.}
         \label{fig:wrong_crossings}
@@ -326,20 +270,20 @@ trabajaremos principalmente con nudos orientados.
     verse en la figura~\ref{fig:thistlethwaite}.
 
     \begin{figure}[ht]
-    	\centering
-	\begin{minipage}{0.45\textwidth}
 		\centering
     	\includegraphics[scale=0.5]{images/unknots}
         \caption{Tres proyecciones del nudo trivial.}
         \label{fig:trivial}
-	\end{minipage}
-	\begin{minipage}{0.45\textwidth}
+	\end{figure}
+	
+	\begin{figure}
     	\centering
 		\includegraphics[scale=0.5]{images/thistlethwaite}
         \caption{Una proyección del nudo trivial descubierta por Thistlethwaite.}
         \label{fig:thistlethwaite}
-	\end{minipage}
     \end{figure}
+
+
 
     \label{block:reidemeister}
     \index{Reidemeister!movimientos de}
@@ -352,6 +296,18 @@ trabajaremos principalmente con nudos orientados.
 		figura~\ref{fig:reidemeister1}, el segundo en la
 		figura~\ref{fig:reidemeister2} y el tercero en la
 		figura~\ref{fig:reidemeister3}. 
+
+\begin{theorem}[Reidemeister]
+	\index{Reidemeister!teorema de}
+	\index{Teorema!de Reidemeister}
+	Dos nudos son equivalentes si y sólo si sus diagramas están conectados
+	por una sucesión finita de movimientos de Reidemeister.
+\end{theorem}
+
+\begin{proof}
+	Para la demostración referimos a \cite[1.14]{MR3156509}.
+\end{proof}
+
 		\begin{figure}[ht]
 			\centering
 			\begin{minipage}{0.3\textwidth}
@@ -373,17 +329,6 @@ trabajaremos principalmente con nudos orientados.
 				\label{fig:reidemeister3}
 			\end{minipage}
 		\end{figure}
-
-\begin{thm}[Reidemeister]
-	\index{Reidemeister!teorema de}
-	\index{Teorema!de Reidemeister}
-	Dos nudos son equivalentes si y sólo si sus diagramas están conectados
-	por una sucesión finita de movimientos de Reidemeister.
-\end{thm}
-
-\begin{proof}
-	Para la demostración referimos a \cite[1.14]{MR3156509}.
-\end{proof}
 
 El teorema de Reidemeister también puede utilizarse para nudos orientados si se
 consideran todas las configuraciones posibles para los diagramas de las
@@ -411,18 +356,15 @@ Reidemeister.
 \begin{example}
 	\begin{figure}[ht]
 		\centering
-		\begin{minipage}{0.4\textwidth}
-		\centering
-		\includegraphics[scale=0.5]{images/trefoils}
+		\includegraphics[scale=0.6]{images/trefoils}
 		\caption{Dos proyecciones del nudo $3_1$.}
 		\label{fig:trefoil}
-	\end{minipage}
-	\begin{minipage}{0.4\textwidth}
+	\end{figure}
+	\begin{figure}[ht]
 		\centering
-		\includegraphics[scale=0.5]{images/4_1unoriented}
+		\includegraphics[scale=0.6]{images/4_1unoriented}
 		\caption{El nudo $4_1$.}
 		\label{fig:4_1:unoriented}
-	\end{minipage}
 	\end{figure}
 
     Otro nudo famoso es el nudo $4_1$ o \textbf{nudo ocho}. Una
@@ -442,19 +384,16 @@ $m(3_1)$. En el ejemplo \ref{exa:2cocycle:3_1andm(3_1)} demostraremos que los nu
 $3_1$ y $m(3_1)$ no son equivalentes. 
 \begin{figure}[ht]
 	\centering
-	\begin{minipage}{0.4\textwidth}
-		\centering
 		\includegraphics[scale=0.6]{images/trefoil_and_mirror}
 		\caption{El nudo $3_1$ (derecha) y su imagen especular $m(3_1)$
 		(izquierda).}
 		\label{fig:trefoil_and_mirror}
-	\end{minipage}
-	\begin{minipage}{0.4\textwidth}
+\end{figure}
+\begin{figure}[ht]
 		\centering
 		\includegraphics[scale=0.6]{images/9_32}
 		\caption{El nudo $9_{32}$ es totalmente asimétrico.}
 		\label{fig:9_32}
-	\end{minipage}
 \end{figure}
 
 Dos nudos orientados $K$ y $L$ serán equivalentes si existe una isotopía
@@ -507,7 +446,7 @@ proyecciones de los primeros nudos primos (salvo reverso e imagen especular)
 donde cada nudo tiene a lo sumo siete cruces. 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{images/knots}
+	\includegraphics[scale=0.7]{images/knots}
 	\caption{Algunos nudos primos.}
 	\label{fig:knots}
 \end{figure}
@@ -578,7 +517,7 @@ ver~\cite[\S 3.3]{MR2079925} para más información.
 
 \begin{figure}[ht]
 	\centering
-    \includegraphics[scale=0.2]{images/fox}
+    \includegraphics[scale=0.3]{images/fox}
     \caption{Ralph Fox (1913--1973)}
 \end{figure}
 
@@ -587,7 +526,7 @@ ver~\cite[\S 3.3]{MR2079925} para más información.
 Todo nudo puede colorearse trivialmente con un solo color. 
 
 La cantidad de coloraciones con tres colores da un invariante de nudos. Este
-resultado es un caso particular del teorema~\ref{thm:fox} que veremos más
+resultado es un caso particular del teorema~\ref{theorem:fox} que veremos más
 adelante. 
 
 \begin{example}
@@ -687,8 +626,8 @@ ejemplo~\ref{exa:3_1:3colors}, estudiar coloraciones de Fox con $p$ colores es
 equivalente a estudiar el núcleo de la matriz de coloraciones vista como matriz
 con coeficientes en $\Z_p$.
 
-\begin{thm}
-    \label{thm:fox}
+\begin{theorem}
+    \label{theorem:fox}
 	\index{Teorema!de Fox}
 	\index{Fox!teorema de}
     Sea $p>2$ un número primo.  La cantidad de coloraciones de Fox con $p$ colores es
@@ -747,7 +686,7 @@ con coeficientes en $\Z_p$.
         antes y después de aplicar los movimientos de Reidemeister. Luego, la
         cantidad de coloraciones de Fox es un invariante de nudos.
     \end{proof}
-\end{thm}
+\end{theorem}
 
 \begin{example}
 	\label{exa:4_1:colorings}
@@ -794,14 +733,14 @@ con coeficientes en $\Z_p$.
     al nudo trivial. 
 \end{example}
 
- \begin{xca}
+ \begin{exercise}
      Sean $p>2$ un número primo y $K$ un nudo con $n$ cruces. Pruebe que la
      cantidad de coloraciones de Fox con $p$ colores que tiene $K$ es $p^m$ para
      algún $m\leq n$.
- \end{xca}
+ \end{exercise}
 
-\begin{xca}
-    \label{xca:colorings}
+\begin{exercise}
+    \label{exercise:colorings}
     El cuadro~\ref{tab:colorings} muestra cuáles de los nudos de la
     figura~\ref{fig:knots} admiten coloraciones de Fox no triviales para
     $p\in\{3,5,7,11,13,17\}$. \textquestiondown Qué conclusiones puede obtener? 
@@ -840,7 +779,7 @@ con coeficientes en $\Z_p$.
         \caption{Algunas coloraciones de Fox para los nudos de la figura~\ref{fig:knots}.}
         \label{tab:colorings}
     \end{table}
-\end{xca}
+\end{exercise}
 
 \section{El grupo fundamental de un nudo}
 \label{section:pi_1}
@@ -850,19 +789,19 @@ esta construcción da un buen invariante. Para una exposición detallada sobre
 las nociones básicas respecto del grupo fundamental de un nudo referimos a
 \cite{MR0445489}.
 
-\begin{defn}
+\begin{definition}
     \index{Grupo!fundamental de un nudo}
     El \textbf{grupo fundamental} $\pi_1(K)$ del nudo $K$ es el grupo 
     $\pi_1(\R^3\setminus K)$. 
-\end{defn}
+\end{definition}
     \label{block:Wirtinger}
-	\begin{wrapfigure}{o}{0.5\textwidth}
+	\begin{figure}
    		\centering
 	    \includegraphics[scale=0.6]{images/crossings}
         \caption{Una orientación da dos tipos de
         cruce. En ambos casos, la relación de Wirtinger es $a_ia_ja_i^{-1}=a_k$.}
         \label{fig:crossings}
-    \end{wrapfigure}
+    \end{figure}
 
     Veamos cómo calcular el grupo fundamental de un nudo.  Supongamos que $K$
     es un nudo con $n$ cruces.  Etiquetamos los arcos con las variables
@@ -877,7 +816,7 @@ las nociones básicas respecto del grupo fundamental de un nudo referimos a
     las relaciones de Wirtinger.  Esta presentación del grupo
     fundamental se conoce como la \textbf{presentación de Wirtinger}.
 
-    \begin{thm}[Wirtinger]
+    \begin{theorem}[Wirtinger]
 		\index{Teorema!de Wirtinger}
         \index{Wirtinger!teorema de}
         \index{Wirtinger!presentación de}
@@ -891,7 +830,7 @@ las nociones básicas respecto del grupo fundamental de un nudo referimos a
         fórmulas de Wirtinger. La ecuación~\eqref{eq:knot_group}
         simboliza el cociente grupo libre en $a_1,\dots,a_n$ por el menor
         subgrupo normal que contiene a los elementos $r_1,\dots,r_m$. 
-    \end{thm}
+    \end{theorem}
 
     \begin{figure}[h]
 		\centering
@@ -899,9 +838,9 @@ las nociones básicas respecto del grupo fundamental de un nudo referimos a
         \caption{Wilhelm Wirtinger (1865--1945)}
     \end{figure}
 
-\begin{xca}
+\begin{exercise}
     Pruebe que el grupo fundamental del nudo trivial es isomorfo a $\Z$.
-\end{xca}
+\end{exercise}
 
 	\index{Teorema!de Dehn}
 	\index{Dehn!teorema de}
@@ -947,7 +886,7 @@ las nociones básicas respecto del grupo fundamental de un nudo referimos a
     trivial. 
 \end{example}
 
-\begin{xca}
+\begin{exercise}
     Sea $n\in\N_{\geq2}$. Recordemos que el \textbf{grupo de trenzas} $\B_n$ se
     define como el grupo dado por los generadores $\sigma_1,\dots,\sigma_{n-1}$
     y las relaciones 
@@ -956,7 +895,7 @@ las nociones básicas respecto del grupo fundamental de un nudo referimos a
         &\sigma_i\sigma_j=\sigma_j\sigma_i && \text{para todo par $i,j$ tal que $|i-j|>1$}.
     \end{align*}
     Pruebe que $\pi_1(3_1)\simeq\B_3$. 
-\end{xca}
+\end{exercise}
 
 \begin{figure}[ht]
 	\centering
@@ -1035,14 +974,14 @@ isomorfos.
     que ningún morfismo $\pi_1(4_1)\to\Sym_3$ es sobreyectivo.
 \end{example}
 
-\begin{xca}
+\begin{exercise}
     \index{Nudo!de la abuela}
     \index{Nudo!cuadrado}
-    \label{xca:granny_and_square}
+    \label{exercise:granny_and_square}
 	En la figura~\ref{fig:granny_and_square} vimos dos nudos compuestos: el
 	nudo de la abuela y el nudo cuadrado.  Pruebe que estos nudos tienen grupos
 	fundamentales isomorfos. 
-\end{xca}
+\end{exercise}
 
 Como veremos más adelante, el nudo de la abuela y el nudo cuadrado no son
 equivalentes. Luego, el grupo fundamental de un nudo es un buen invariante
@@ -1084,7 +1023,7 @@ sets}.
         izquierda a derecha: John Conway, Gavin Wraith, David Joyce, Egbert Brieskorn.}
     \end{figure}
 
-	\begin{defn}
+	\begin{definition}
 		\index{Quandle}
 		\label{block:quandle}
 		Un \textbf{quandle} es un par $(X,\triangleright)$, donde $X$ es un
@@ -1095,7 +1034,7 @@ sets}.
 			& x\triangleright (y\triangleright z)=(x\triangleright y)\triangleright (x\triangleright z) && \text{para todo $x,y,z\in X$},\\
 			& x\triangleright x=x && \text{para todo $x\in X$}.
 		\end{align}
-	\end{defn}
+	\end{definition}
 
 	Utilizaremos la siguiente notación: $x\triangleright^{-1}
 	y=\varphi_x^{-1}(y)$. 
@@ -1104,11 +1043,11 @@ sets}.
 	la que damos en este artículo, ya que Joyce usa acciones a derecha y no
 	acciones a izquierda. 
 
-	\begin{defn}
+	\begin{definition}
 		Sean $X$ e $Y$ dos quandles. Una función $f\colon X\to Y$ es un
 		\textbf{morfismo} de quandles si $f(x\triangleright x')=f(x)\triangleright
 		f(x')$ para todo $x,x'\in X$.
-	\end{defn}
+	\end{definition}
 
 \begin{example}
     \index{Quandle!trivial} Sea $X$ un conjunto no vacío. Entonces $X$ es un
@@ -1124,7 +1063,7 @@ sets}.
 	de conjugación} asociado a (la clase de) $g$ en $G$.
 \end{example}
 
-\begin{xca}
+\begin{exercise}
     Si $X$ es un quandle de conjugación entonces 
     \begin{equation}
         \label{eq:crossed_set}
@@ -1132,14 +1071,14 @@ sets}.
     \end{equation}
     Encuentre un quandle de tres elementos que no cumpla con la
     condición~\eqref{eq:crossed_set}. 
-\end{xca}
+\end{exercise}
 
-\begin{xca}
+\begin{exercise}
     \index{Quandle!diedral}
 	Sea $n\in\N_{\geq3}$. Pruebe que $\Z_n$ es un quandle con 
     $x\triangleright y=2x-y$ para todo $x,y\in\Z_n$. Este quandle se denomina
     \textbf{quandle diedral} y se denota por $\D_n$. 
-\end{xca}
+\end{exercise}
 
 \begin{example}
     \label{block:alexander}
@@ -1181,10 +1120,10 @@ sets}.
     $x\triangleright y=(1-\alpha)x+\alpha y$ para todo $x,y\in\F_q$.
 \end{example}
 
-\begin{xca}
+\begin{exercise}
 	Pruebe que el quandle de conjugación asociado a la clase de $(123)$ en
 	$\Alt_4$ es isomorfo a un quandle de Alexander.
-\end{xca}
+\end{exercise}
 
 \label{block:fundamental_quandle}
     \index{Quandle!fundamental de un nudo}
@@ -1199,14 +1138,14 @@ sets}.
         r_\chi:a_i\triangleright a_j=a_k.          
     \end{equation}
 
-\begin{defn}
+\begin{definition}
     El \textbf{quandle fundamental} del nudo $K$ es el quandle 
     \[
         Q(K)=\langle a_1,a_2,\dots,a_n:r_1,\dots,r_m\rangle,
     \]
     donde las relaciones $r_1,\dots,r_m$ están dadas por las fórmulas
     \eqref{eq:Joyce}.
-\end{defn}
+\end{definition}
 
 \begin{example}
     \label{exa:3_1:fundamental_quandle}
@@ -1241,7 +1180,7 @@ sets}.
 	\label{block:quandle_proof} No es difícil demostrar que el quandle
 	fundamental de un nudo queda invariante por los movimientos de
 	Reidemeister. La demostración es apenas más complicada que la del
-	teorema~\ref{thm:fox}. La diferencia está en que ahora habrá más diagramas
+	teorema~\ref{theorem:fox}. La diferencia está en que ahora habrá más diagramas
 	de Reidemeister para verificar pues deben considerarse todas las
 	configuraciones posibles con respecto a la orientación del nudo. 
     Para el primer movimiento de Reidemeister deben verificarse los diagramas de
@@ -1278,10 +1217,10 @@ sets}.
         \label{fig:oriented_R3a}
     \end{figure}
 
-	\begin{thm}[Matveev]
+	\begin{theorem}[Matveev]
 		Si $K$ y $L$ son dos nudos, entonces 
 		$Q(K)\simeq Q(L)$ si y sólo si $K=L$ o $L=rm(K)$.  
-	\end{thm}
+	\end{theorem}
 
 	\begin{proof}
 	Para la demostración referimos a \cite{MR672410}.
@@ -1294,9 +1233,9 @@ sets}.
 	\]
 	donde $F_X$ es el grupo libre con base en los elementos de $X$.
 
-	\begin{thm}[Joyce]
+	\begin{theorem}[Joyce]
 		$G_{Q(K)}\simeq\pi_1(K)$ para todo nudo $K$. 
-	\end{thm}
+	\end{theorem}
 
 	\begin{proof}
 		La demostración aparece en~\cite{MR638121}.
@@ -1662,10 +1601,10 @@ sets}.
         \label{fig:quandle_crossing}
     \end{figure}
 
-	\begin{defn}
+	\begin{definition}
 		Una \textbf{coloración} del nudo $K$ con el quandle $X$ es un morfismo
 		de quandles $Q(K)\to X$. 
-	\end{defn}
+	\end{definition}
 
 	Por lo dicho anteriormente, la cantidad de
     morfismos $Q(K)\to X$ es un invariante de nudos.  Este invariante se denota
@@ -1706,12 +1645,12 @@ sets}.
 %Las coloraciones con quandles de Alexander se llaman \textbf{coloraciones de
 %Alexander}. 
 
-\begin{xca}
+\begin{exercise}
 	Pruebe que el quandle de conjugación asociado a la matriz $\begin{pmatrix}0
 	& 1\\ 2 & 1\end{pmatrix}$ de $\SL(2,\Z_3)$ es isomorfo al quandle de
 	Alexander de tipo $(4,\alpha)$ visto en el ejemplo~\ref{exa:T}.  De alguna
 	forma, habíamos utilizamos este quandle en el ejemplo~\ref{exa:4_1}.
-\end{xca}
+\end{exercise}
 
 \begin{example}
 	En la sección~\ref{block:5_1:fundamental_quandle} presentamos el quandle
@@ -1759,26 +1698,26 @@ sets}.
     es un morfismo de quandles.
 \end{example}
 
-\begin{xca}
-    \label{xca:varios_pares}
+\begin{exercise}
+    \label{exercise:varios_pares}
 		Pruebe que el quandle de Alexander de tipo $(4,\alpha)$ definido sobre
 		el cuerpo
 		$\F_4=\F_2[\alpha]/(\alpha^2+\alpha+1)=\{0,1,\alpha,\alpha+1\}$ permite
 		distinguir los siguientes pares de nudos: a) $3_1$ y $6_1$; b) $4_1$ y
 $5_1$; c) $6_2$ y $7_2$; d) $6_3$ y $7_3$.
-\end{xca}
+\end{exercise}
 
-\begin{xca}
-    \label{xca:5_2y7_1}
+\begin{exercise}
+    \label{exercise:5_2y7_1}
 	Pruebe que con una clase de conjugación del grupo alternado $\Alt_5$ es
 	posible distinguir los nudos $5_2$ y $7_1$. 
-\end{xca}
+\end{exercise}
 
-\begin{xca}
-    Utilice los resultados de los ejercicios \ref{xca:colorings},
-    \ref{xca:varios_pares} y \ref{xca:5_2y7_1} y demuestre que todos los nudos
+\begin{exercise}
+    Utilice los resultados de los ejercicios \ref{exercise:colorings},
+    \ref{exercise:varios_pares} y \ref{exercise:5_2y7_1} y demuestre que todos los nudos
     de la figura~\ref{fig:knots} son no triviales y distintos.
-\end{xca}
+\end{exercise}
 
 %\label{block:extensions}
 Sea $A$ un grupo abeliano (escrito multiplicativamente), sea $X$ un quandle, y sea 
@@ -1813,18 +1752,18 @@ y, por otro lado,
 	condición~\eqref{eq:2cocycle2} es equivalente a la distributividad de la
 	operación binaria en $X\times A$.
 
-	\begin{defn}
+	\begin{definition}
 		\index{$2$-cociclo}
 		Una función $f:X\times X\to A$ que satisface las condiciones
 		\eqref{eq:2cocycle1} y \eqref{eq:2cocycle2} se llama \textbf{$2$-cociclo
 		del quandle $X$} con coeficientes en $A$.  
-	\end{defn}
+	\end{definition}
 
-	\begin{defn} 
+	\begin{definition} 
 		El quandle sobre $X\times A$ obtenido con la operación~\eqref{eq:extension} se 
 		llama \textbf{extensión abeliana} de $X$ por el grupo abeliano $A$ y el
 		$2$-cociclo $f$, y se denota por $X\times_{f}A$.  
-	\end{defn}
+	\end{definition}
 
 \begin{example}
     \label{exa:T:2cocycle}
@@ -1866,7 +1805,7 @@ y, por otro lado,
     es un $2$-cociclo de $X$ con coeficientes en $A$.
 \end{example}
 
-\begin{defn}
+\begin{definition}
 	\label{$2$-cociclos!cohómologos}
 	\label{$2$-cociclos!equivalentes}
 	Un $2$-cociclo $f\colon X\times X\to A$ es un \textbf{coborde} si existe una función 
@@ -1878,7 +1817,7 @@ y, por otro lado,
 		f(x,y)=\gamma(x\triangleright y)g(x,y)\gamma(y)^{-1}
 	\]
 	para todo $x,y\in X$.  
-\end{defn}
+\end{definition}
 
 Cada $2$-cociclo de un quandle $X$
 nos permite definir una extensión abeliana de $X$. Estos $2$-cociclos son
@@ -1897,7 +1836,7 @@ abelianas de quandles tiene además aplicaciones a la teoría de nudos
     \index{Nudo!cuadrado}
 	Recordemos el nudo de la abuela y el nudo cuadrado de la
 	figura~\ref{fig:granny_and_square}. En el
-	ejercicio~\ref{xca:granny_and_square} vimos que estos nudos tienen grupos
+	ejercicio~\ref{exercise:granny_and_square} vimos que estos nudos tienen grupos
 	fundamentales isomorfos. Sin embargo, como veremos a continuación, estos
 	nudos no son equivalentes.  Sean $X$ el quandle de conjugación asociado a
 	la clase de $(1234)$ en $\Sym_4$ y $f$ el $2$-cociclo de $X$ que vimos en el
@@ -1920,7 +1859,7 @@ abelianas de quandles tiene además aplicaciones a la teoría de nudos
 		\label{eq:408}
     	\mathrm{Col}_{X\times_fA}(3_1\#m(3_1))=408.
 	\end{equation}
-	Vimos en el ejercicio~\ref{xca:granny_and_square} que el nudo de la abuela
+	Vimos en el ejercicio~\ref{exercise:granny_and_square} que el nudo de la abuela
 	es trivial si y sólo si el nudo cuadrado lo es. Esta observación y las
 	fórmulas~\eqref{eq:24} y~\eqref{eq:408} implican que estos nudos son no
 	triviales y distintos.
@@ -1945,7 +1884,7 @@ expresión
 	\omega_f(\mathcal{C},\chi) =f(a_i,a_j)^{\mathrm{signo}(\chi)}.
 \]
 
-\begin{defn}
+\begin{definition}
 	\index{Función de partición}
 	\index{Invariantes!dados por quandles y $2$-cociclos}
 	La \textbf{función de partición} $\Phi_{X,f}(K)$ del nudo $K$ (asociada al
@@ -1957,12 +1896,12 @@ expresión
 	donde el producto se toma sobre todos los cruces $\chi$ que tiene el
 	diagrama del nudo $K$ y la suma se toma sobre todos las coloraciones
 	$\mathcal{C}$ de $K$ dados por el quandle $X$.  
-\end{defn}
+\end{definition}
 
 La fórmula~\eqref{eq:cocycle_invariant} define un elemento de $\Z[A]$, el
 anillo de grupo de $A$.
 
-\begin{thm}
+\begin{theorem}
     La función de partición $\Phi_{X,f}$ es un invariante de nudos. 
 
     \begin{proof}
@@ -2010,7 +1949,7 @@ anillo de grupo de $A$.
         Como $A$ es un grupo abeliano, al cancelar $f(a,b)$ en ambos miembros,
         obtenemos el resultado deseado.
     \end{proof}
-\end{thm}
+\end{theorem}
 
 \label{block:cocycles_and_colorings}
 Los invariantes por quandles y $2$-cociclos extienden a los invariantes dados por
