@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -13,7 +11,7 @@
    height="75.306175"
    id="svg3053"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
    sodipodi:docname="4_1.svg">
   <defs
      id="defs3055" />
@@ -30,15 +28,16 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="998"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
      inkscape:window-x="0"
-     inkscape:window-y="31"
+     inkscape:window-y="29"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata3058">
     <rdf:RDF>
@@ -64,14 +63,17 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot4721"
-       style="font-size:8px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
-         id="flowRegion4723"><rect
+       style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+         id="flowRegion4723"
+         style="font-family:sans-serif"><rect
            id="rect4725"
            width="22.475895"
            height="8.8388348"
            x="282.33765"
            y="389.19702" /></flowRegion><flowPara
-         id="flowPara4727" /></flowRoot>    <path
+         id="flowPara4727"
+         style="font-size:8px;line-height:1.25;font-family:sans-serif"> </flowPara></flowRoot>
+    <path
        sodipodi:nodetypes="ccc"
        id="path3266"
        d="m 196.9421,389.99084 5.21674,2.41272 0,-5.85814"
@@ -80,7 +82,7 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot3295-4"
-       style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:'URW Bookman L';-inkscape-font-specification:'URW Bookman L Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        transform="translate(5.5745285,18.901413)"><flowRegion
          id="flowRegion3297-3"><rect
            id="rect3299-0"
@@ -90,13 +92,14 @@
            y="374.80237"
            style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic" /></flowRegion><flowPara
          id="flowPara3301-89"
-         style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic">a<flowSpan
-   style="font-size:65.00091553%;baseline-shift:sub"
-   id="flowSpan3004">1</flowSpan></flowPara></flowRoot>    <flowRoot
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:1.25;font-family:'URW Bookman L';-inkscape-font-specification:'URW Bookman L Italic'">a<flowSpan
+   style="font-size:65.0009%;baseline-shift:sub"
+   id="flowSpan3004">1</flowSpan></flowPara></flowRoot>
+    <flowRoot
        xml:space="preserve"
        id="flowRoot3295"
-       style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic"
-       transform="translate(68.012363,-42.596062)"><flowRegion
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:'URW Bookman L';-inkscape-font-specification:'URW Bookman L Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="translate(68.012363,-38.596062)"><flowRegion
          id="flowRegion3297"><rect
            id="rect3299"
            width="31.358953"
@@ -105,12 +108,13 @@
            y="374.80237"
            style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic" /></flowRegion><flowPara
          id="flowPara3301"
-         style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic">a<flowSpan
-   style="font-size:65.00091553%;baseline-shift:sub"
-   id="flowSpan3004-8">2</flowSpan></flowPara></flowRoot>    <flowRoot
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:1.25;font-family:'URW Bookman L';-inkscape-font-specification:'URW Bookman L Italic'">a<flowSpan
+   style="font-size:65.0009%;baseline-shift:sub"
+   id="flowSpan3004-8">2</flowSpan></flowPara></flowRoot>
+    <flowRoot
        xml:space="preserve"
        id="flowRoot3295-0"
-       style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:'URW Bookman L';-inkscape-font-specification:'URW Bookman L Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        transform="translate(60.102461,-5.9488498)"><flowRegion
          id="flowRegion3297-7"><rect
            id="rect3299-7"
@@ -120,12 +124,13 @@
            y="374.80237"
            style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic" /></flowRegion><flowPara
          id="flowPara3301-7"
-         style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic">a<flowSpan
-   style="font-size:65.00091553%;baseline-shift:sub"
-   id="flowSpan3004-0">3</flowSpan></flowPara></flowRoot>    <flowRoot
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:1.25;font-family:'URW Bookman L';-inkscape-font-specification:'URW Bookman L Italic'">a<flowSpan
+   style="font-size:65.0009%;baseline-shift:sub"
+   id="flowSpan3004-0">3</flowSpan></flowPara></flowRoot>
+    <flowRoot
        xml:space="preserve"
        id="flowRoot3295-8"
-       style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:'URW Bookman L';-inkscape-font-specification:'URW Bookman L Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        transform="translate(85.608812,-9.1912354)"><flowRegion
          id="flowRegion3297-9"><rect
            id="rect3299-1"
@@ -135,7 +140,8 @@
            y="374.80237"
            style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic" /></flowRegion><flowPara
          id="flowPara3301-0"
-         style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:URW Bookman L;-inkscape-font-specification:URW Bookman L Italic">a<flowSpan
-   style="font-size:65.00091553%;baseline-shift:sub"
-   id="flowSpan3004-2">4</flowSpan></flowPara></flowRoot>  </g>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:1.25;font-family:'URW Bookman L';-inkscape-font-specification:'URW Bookman L Italic'">a<flowSpan
+   style="font-size:65.0009%;baseline-shift:sub"
+   id="flowSpan3004-2">4</flowSpan></flowPara></flowRoot>
+  </g>
 </svg>
