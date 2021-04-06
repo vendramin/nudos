@@ -1,6 +1,6 @@
 \documentclass[graybox]{svmult}
 
-\usepackage{caption}
+\usepackage[small,bf]{caption}
 \usepackage{amssymb}
 \usepackage{amstext}
 \usepackage{mathtools}
@@ -13,6 +13,9 @@
 \usepackage{graphicx}   
 \usepackage{multicol}        
 \usepackage[bottom]{footmisc}
+
+% For the way captions are centered
+\setlength{\captionmargin}{27pt}
 
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\B}{\mathbb{B}}
@@ -79,7 +82,9 @@
 \title*{Nudos, quandles y homología}
 \author{Leandro Vendramin}
 
-\institute{Name of First Author \at Name, Address of Institute, \email{lvendramin@dm.uba.ar}}
+\institute{Leandro Vendramin \at Vrije Universiteit Brussel, \email{Leandro.Vendramin@vub.be}}
+
+\maketitle
 
 \abstract{
 Presentamos una introducción informal a la teoría combinatoria de nudos.
@@ -87,7 +92,6 @@ Discutiremos el grupo fundamental de un nudo, invariantes por coloreo e
 invariantes dados por quandles y homología de quandles.
 }
 
-\maketitle
 
 \section{Introducción}
 
@@ -271,14 +275,14 @@ trabajaremos principalmente con nudos orientados.
 
     \begin{figure}[ht]
 		\centering
-    	\includegraphics[scale=0.5]{images/unknots}
+    	\includegraphics[scale=0.6]{images/unknots}
         \caption{Tres proyecciones del nudo trivial.}
         \label{fig:trivial}
 	\end{figure}
 	
 	\begin{figure}
     	\centering
-		\includegraphics[scale=0.5]{images/thistlethwaite}
+		\includegraphics[scale=0.6]{images/thistlethwaite}
         \caption{Una proyección del nudo trivial descubierta por Thistlethwaite.}
         \label{fig:thistlethwaite}
     \end{figure}
@@ -312,19 +316,19 @@ trabajaremos principalmente con nudos orientados.
 			\centering
 			\begin{minipage}{0.3\textwidth}
 				\centering
-				\includegraphics[width=0.5\textwidth]{images/reidemeisterI}
+				\includegraphics[width=0.6\textwidth]{images/reidemeisterI}
 				\caption{$\mathcal{R}_1$}
 				\label{fig:reidemeister1}
 			\end{minipage}
 			\begin{minipage}{0.3\textwidth}
 				\centering
-				\includegraphics[width=0.5\textwidth]{images/reidemeisterII}
+				\includegraphics[width=0.6\textwidth]{images/reidemeisterII}
 				\caption{$\mathcal{R}_2$}
 				\label{fig:reidemeister2}
 			\end{minipage}
 			\begin{minipage}{0.3\textwidth}
 				\centering
-				\includegraphics[width=0.5\textwidth]{images/reidemeisterIII}
+				\includegraphics[width=0.6\textwidth]{images/reidemeisterIII}
 				\caption{$\mathcal{R}_3$}
 				\label{fig:reidemeister3}
 			\end{minipage}
@@ -460,7 +464,7 @@ donde cada nudo tiene a lo sumo siete cruces.
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.5]{images/grannyandsquare}
+	\includegraphics[scale=0.6]{images/grannyandsquare}
 	\caption{El nudo de la abuela (izquierda) y el nudo cuadrado (derecha)
 	no son equivalentes.}
 	\label{fig:granny_and_square}
@@ -517,7 +521,7 @@ ver~\cite[\S 3.3]{MR2079925} para más información.
 
 \begin{figure}[ht]
 	\centering
-    \includegraphics[scale=0.3]{images/fox}
+    \includegraphics[scale=0.4]{images/fox}
     \caption{Ralph Fox (1913--1973)}
 \end{figure}
 
@@ -575,7 +579,7 @@ de $\Z_3$.
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.5]{images/crossing}
+	\includegraphics[scale=0.6]{images/crossing}
 	\caption{Un cruce como este se colorea con la ecuación $2a-b-c=0$.}
 	\label{fig:crossing}
 \end{figure}
@@ -834,7 +838,7 @@ las nociones básicas respecto del grupo fundamental de un nudo referimos a
 
     \begin{figure}[h]
 		\centering
-        \includegraphics[scale=0.2]{images/wirtinger}
+        \includegraphics[scale=0.3]{images/wirtinger}
         \caption{Wilhelm Wirtinger (1865--1945)}
     \end{figure}
 
@@ -852,7 +856,7 @@ las nociones básicas respecto del grupo fundamental de un nudo referimos a
 
     \begin{figure}[h]
 		\centering
-        \includegraphics[scale=0.2]{images/dehn}
+        \includegraphics[scale=0.3]{images/dehn}
         \caption{Max Dehn (1878--1952)}
     \end{figure}
 
@@ -927,7 +931,7 @@ isomorfos.
 
 \begin{figure}[ht]
 	\centering
-    \includegraphics[scale=0.2]{images/tietze}
+    \includegraphics[scale=0.3]{images/tietze}
     \caption{Heinrich Tietze (1880--1964)}
 \end{figure}
 
@@ -1018,7 +1022,7 @@ una estructura equivalente a la de Conway y Wraith: los \emph{automorphic
 sets}. 
     \begin{figure}[h]
 		\centering
-        \includegraphics[scale=0.3]{images/cwjb}
+        \includegraphics[scale=0.4]{images/cwjb}
         \caption{Algunos de los fundadores de la teoría de quandles. De
         izquierda a derecha: John Conway, Gavin Wraith, David Joyce, Egbert Brieskorn.}
     \end{figure}
@@ -1105,7 +1109,7 @@ sets}.
 
     \begin{figure}[h]
 		\centering
-        \includegraphics[scale=0.2]{images/alexander}
+        \includegraphics[scale=0.3]{images/alexander}
         \caption{James Alexander (1888--1971)}
     \end{figure}
 \end{example}
@@ -1197,7 +1201,7 @@ sets}.
     \end{minipage}
 	\begin{minipage}{0.5\textwidth}
 		\centering
-        \includegraphics[scale=0.5]{images/oriented_R2}
+        \includegraphics[scale=0.6]{images/oriented_R2}
         \caption{Las cuatro configuraciones posibles en el segundo movimiento de Reidemeister.}
         \label{fig:oriented_R2}
     \end{minipage}
@@ -1212,7 +1216,7 @@ sets}.
 
     \begin{figure}[h]
 		\centering
-        \includegraphics[scale=0.5]{images/oriented_R3a}
+        \includegraphics[scale=0.6]{images/oriented_R3a}
         \caption{Una de las configuraciones posibles para el tercer movimiento de Reidemeister.}
         \label{fig:oriented_R3a}
     \end{figure}
@@ -1279,13 +1283,13 @@ sets}.
 		\centering
 		\begin{minipage}{0.3\textwidth}
 			\centering
-			\includegraphics[scale=0.5]{images/5_1}
+			\includegraphics[scale=0.6]{images/5_1}
 			\caption{$5_1$}
 			\label{fig:5_1}
 		\end{minipage}
 		\begin{minipage}{0.3\textwidth}
 			\centering
-			\includegraphics[scale=0.5]{images/5_2}
+			\includegraphics[scale=0.6]{images/5_2}
 			\caption{$5_2$}
 			\label{fig:5_2}
 		\end{minipage}
@@ -1343,19 +1347,19 @@ sets}.
 		\centering
 		\begin{minipage}{0.3\textwidth}
 			\centering
-		    \includegraphics[scale=0.5]{images/6_1}
+		    \includegraphics[scale=0.6]{images/6_1}
 			\caption{$6_1$}
 			\label{fig:6_1}
 		\end{minipage}
 		\begin{minipage}{0.3\textwidth}
 			\centering
-		    \includegraphics[scale=0.5]{images/6_2}
+		    \includegraphics[scale=0.6]{images/6_2}
 			\caption{$6_2$}
 			\label{fig:6_2}
 		\end{minipage}
 		\begin{minipage}{0.3\textwidth}
 			\centering
-		    \includegraphics[scale=0.5]{images/6_3}
+		    \includegraphics[scale=0.6]{images/6_3}
 			\caption{$6_3$}
 			\label{fig:6_3}
 		\end{minipage}
@@ -1400,21 +1404,21 @@ sets}.
 		\centering
 		\begin{minipage}{0.3\textwidth}
 			\centering
-			\includegraphics[scale=0.5]{images/7_1}
+			\includegraphics[scale=0.6]{images/7_1}
 			\caption{$7_1$}
 			\label{fig:7_1}
 
 		\end{minipage}
 		\begin{minipage}{0.3\textwidth}
 			\centering
-			\includegraphics[scale=0.5]{images/7_2}
+			\includegraphics[scale=0.6]{images/7_2}
 			\caption{$7_2$}
 			\label{fig:7_2}
 
 		\end{minipage}
 		\begin{minipage}{0.3\textwidth}
 			\centering
-			\includegraphics[scale=0.5]{images/7_3}
+			\includegraphics[scale=0.6]{images/7_3}
 			\caption{$7_3$}
 			\label{fig:7_3}
 		\end{minipage}
@@ -1497,25 +1501,25 @@ sets}.
 		\centering
 		\begin{minipage}{0.2\textwidth}
 			\centering
-	    	\includegraphics[scale=0.5]{images/7_4}
+	    	\includegraphics[scale=0.6]{images/7_4}
 			\caption{$7_4$}
 			\label{fig:7_4}
 		\end{minipage}
 		\begin{minipage}{0.2\textwidth}
 			\centering
-	    	\includegraphics[scale=0.5]{images/7_5}
+	    	\includegraphics[scale=0.6]{images/7_5}
 			\caption{$7_5$}
 			\label{fig:7_5}
 		\end{minipage}
 		\begin{minipage}{0.2\textwidth}
 			\centering
-	    	\includegraphics[scale=0.5]{images/7_6}
+	    	\includegraphics[scale=0.6]{images/7_6}
 			\caption{$7_6$}
 			\label{fig:7_6}
 		\end{minipage}
 		\begin{minipage}{0.2\textwidth}
 			\centering
-	    	\includegraphics[scale=0.5]{images/7_7}
+	    	\includegraphics[scale=0.6]{images/7_7}
 			\caption{$7_7$}
 			\label{fig:7_7}
 		\end{minipage}
@@ -1562,7 +1566,7 @@ sets}.
 		\centering
 		\begin{minipage}{0.3\textwidth}
 			\centering
-			\includegraphics[scale=0.55]{images/3_1m}
+			\includegraphics[scale=0.6]{images/3_1m}
 			\caption{El nudo $m(3_1)$.}
 			\label{fig:3_1m}
 		\end{minipage}
@@ -1596,7 +1600,7 @@ sets}.
 
     \begin{figure}[h]
 		\centering
-	    \includegraphics[scale=0.5]{images/quandlecrossing}
+	    \includegraphics[scale=0.6]{images/quandlecrossing}
 		\caption{La regla para colorear con un quandle. Notar que $a_i\triangleright a_j=a_k$ si y sólo si $a_i\triangleright^{-1}a_k=a_j$.}
         \label{fig:quandle_crossing}
     \end{figure}
