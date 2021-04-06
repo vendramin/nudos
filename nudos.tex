@@ -1,5 +1,6 @@
 \documentclass[graybox]{svmult}
 
+\usepackage[utf8]{inputenc}
 \usepackage[small,bf]{caption}
 \usepackage{amssymb}
 \usepackage{amstext}
@@ -13,9 +14,78 @@
 \usepackage{graphicx}   
 \usepackage{multicol}        
 \usepackage[bottom]{footmisc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc} 
 
 % For the way captions are centered
 \setlength{\captionmargin}{27pt}
+
+\overfullrule=1mm
+
+%%% for Spanish
+\def\abstractname{Resumen}%
+\def\ackname{Agradecimientos}%
+\def\andname{y}%
+\def\bibname{Referencias}%
+\def\lastandname{, y}%
+\def\appendixname{Apéndice}%
+\def\chaptername{Capítulo}%
+\def\claimname{Afirmación}%
+\def\conjecturename{Conjetura}%
+\def\contentsname{Contenidos}%
+\def\corollaryname{Corolario}%
+\def\definitionname{Definici\'on}%
+\def\emailname{e-mail}%
+\def\examplename{Ejemplo}%
+\def\examplesname{Ejemplos}%
+\def\exercisename{Ejercicio}%
+\def\figurename{Fig.}%
+\def\forewordname{Foreword}%
+\def\keywordname{{\bf Palabras clave:}}%
+\def\indexname{Índice}%
+\def\lemmaname{Lema}%
+\def\listfigurename{Figuras}%
+\def\listtablename{Tablas}%
+\def\notename{Nota}%
+\def\partname{Parte}%
+\def\prefacename{Prefacio}%
+\def\problemname{Problema}%
+\def\proofname{Demostración}%
+\def\propertyname{Propiedad}%
+\def\propositionname{Proposici\'on}%
+\def\questionname{Pregunta}%
+\def\refname{Referencias}%
+\def\remarkname{Observación}%
+\def\seename{see}%
+\def\solutionname{Solución}%
+\def\tablename{Tabla}%
+\def\theoremname{Teorema}
+\def\notationname{Notación}
+\def\conventionname{Convención}
+
+% % change numbers 
+\let\remark\relax
+\let\theorem\relax
+\let\lemma\relax
+\let\definition\relax
+\let\proposition\relax
+\let\corollary\relax
+\let\exercise\relax
+\let\example\relax
+\let\conjecture\relax
+\spnewtheorem{theorem}{\theoremname}{\bfseries}{\itshape}
+\renewcommand\thetheorem{\arabic{theorem}}
+\spnewtheorem{lemma}[theorem]{\lemmaname}{\bfseries}{\itshape}
+\spnewtheorem{definition}[theorem]{\definitionname}{\bfseries}{\itshape}
+\spnewtheorem{proposition}[theorem]{\propositionname}{\bfseries}{\itshape}
+\spnewtheorem{corollary}[theorem]{\corollaryname}{\bfseries}{\itshape}
+\spnewtheorem{exercise}[theorem]{\exercisename}{\bfseries}{\upshape}
+\spnewtheorem{example}[theorem]{\examplename}{\bfseries}{\upshape}
+\spnewtheorem{examples}[theorem]{\examplesname}{\bfseries}{\upshape}
+\spnewtheorem{remark}[theorem]{\remarkname}{}{\upshape}
+\spnewtheorem{conjecture}[theorem]{\conjecturename}{\bfseries}{\upshape}
+\spnewtheorem{notation}[theorem]{\notationname}{\bfseries}{\upshape}
+\spnewtheorem{convention}[theorem]{\conventionname}{\bfseries}{\upshape}
 
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\B}{\mathbb{B}}
@@ -1186,18 +1256,20 @@ sets}.
     Reidemeister se muestran en la figura~\ref{fig:oriented_R2}. 
 
     \begin{figure}[ht]
-		\begin{minipage}{0.5\textwidth}
+	%	\begin{minipage}{0.5\textwidth}
 		\centering
         \includegraphics[scale=0.6]{images/oriented_R1}
         \caption{Las configuraciones posibles en el primer movimiento de Reidemeister.}
         \label{fig:oriented_R1}
-    \end{minipage}
-	\begin{minipage}{0.5\textwidth}
+    \end{figure}
+    %\end{minipage}
+	%\begin{minipage}{0.5\textwidth}
+	\begin{figure}[ht]
 		\centering
         \includegraphics[scale=0.6]{images/oriented_R2}
         \caption{Las cuatro configuraciones posibles en el segundo movimiento de Reidemeister.}
         \label{fig:oriented_R2}
-    \end{minipage}
+    %\end{minipage}
     \end{figure}
 
 	Finalmente, para el tercer movimiento hay ocho posibles diagramas. Por
@@ -1520,7 +1592,6 @@ sets}.
 		\end{minipage}
 	\end{figure}
 
-
 	Presentemos el quandle fundamental de la imagen especular del nudo $3_1$ de
 	la figura~\ref{fig:3_1m}. El diagrama tiene tres cruces negativos y el
 	quandle fundamental es
@@ -1530,6 +1601,21 @@ sets}.
 		a_2\triangleright a_1=a_3,\;
 		a_1\triangleright a_3=a_2\rangle.
 	\end{align*}
+
+	\begin{figure}[ht]
+	    \centering
+	    \includegraphics[scale=0.6]{images/3_1m}
+		\caption{$m(3_1)$.}
+    	\label{fig:3_1m}
+	\end{figure}
+
+% 	\begin{figure}[ht]
+% %		\begin{minipage}{0.3\textwidth}
+% 			\centering
+% 			\includegraphics[scale=0.6]{images/granny}
+% 			\caption{$3_1\#3_1$}
+% 			\label{fig:granny}
+%   \end{figure}
 
     La figura~\ref{fig:granny} muestra el nudo de la abuela y la
     figura~\ref{fig:square} el nudo cuadrado.  Un cálculo sencillo muestra que 
@@ -1557,29 +1643,35 @@ sets}.
     donde las tres primeras ecuaciones corresponden a los cruces positivos y
    	las tres últimas a los cruces negativos.
 
+%  	\begin{figure}[ht]
+% % %		\begin{minipage}{0.3\textwidth}
+% % 			\centering
+% % 			\includegraphics[scale=0.6]{images/granny}
+% % 			\caption{$3_1\#3_1$}
+% % 			\label{fig:granny}
+% % %		\end{minipage}
+% %		\begin{minipage}{0.3\textwidth}
+% 			\centering
+% 			\includegraphics[scale=0.6]{images/square}
+% 			\caption{$3_1\#m(3_1)$}
+% 			\label{fig:square}
+% %		\end{minipage}
+% 	\end{figure}
 	\begin{figure}[ht]
-%		\centering
-%		\begin{minipage}{0.3\textwidth}
-			\centering
-			\includegraphics[scale=0.6]{images/3_1m}
-			\caption{El nudo $m(3_1)$.}
-			\label{fig:3_1m}
-%		\end{minipage}
-		\end{figure}
-	\begin{figure}[ht]
-		\begin{minipage}{0.5\textwidth}
-			\centering
+		\centering
+        \begin{minipage}{0.4\textwidth}
+            \centering
 			\includegraphics[scale=0.6]{images/granny}
 			\caption{$3_1\#3_1$}
 			\label{fig:granny}
 		\end{minipage}
-		\begin{minipage}{0.5\textwidth}
+		\begin{minipage}{0.4\textwidth}
 			\centering
 			\includegraphics[scale=0.6]{images/square}
 			\caption{$3_1\#m(3_1)$}
 			\label{fig:square}
 		\end{minipage}
-	\end{figure}
+    \end{figure}
 
 
  
@@ -1661,7 +1753,7 @@ sets}.
 	\begin{multline*}
         a_1\mapsto (15432),\quad
         a_2\mapsto (12453),\quad
-        a_3\mapsto (14352),\quad 
+        a_3\mapsto (14352),\\
         a_4\mapsto (15324),\quad
         a_5\mapsto (14523),
 	\end{multline*}
