@@ -356,19 +356,17 @@ trabajaremos principalmente con nudos orientados.
         \label{fig:thistlethwaite}
     \end{figure}
 
-
-
     \label{block:reidemeister}
     \index{Reidemeister!movimientos de}
-		En 1926 Reidemeister vislumbró una forma combinatoria de verificar si dos
-		nudos son equivalentes. Básicamente, dos diagramas representarán al mismo
-		nudo si y sólo si puede pasarse de un diagrama al otro mediante una
-		sucesión finita de ciertas transformaciones, $\mathcal{R}_1$,
-        $\mathcal{R}_2$ y $\mathcal{R}_3$, llamadas \textbf{movimientos de
-		Reidemeister}.  Hay tres de estos movimientos:  el primero se muestra en la
-		figura~\ref{fig:reidemeister1}, el segundo en la
-		figura~\ref{fig:reidemeister2} y el tercero en la
-		figura~\ref{fig:reidemeister3}. 
+	En 1926 Reidemeister vislumbró una forma combinatoria de verificar si dos
+	nudos son equivalentes. Básicamente, dos diagramas representarán al mismo
+	nudo si y sólo si puede pasarse de un diagrama al otro mediante una
+	sucesión finita de ciertas transformaciones, $\mathcal{R}_1$,
+    $\mathcal{R}_2$ y $\mathcal{R}_3$, llamadas \textbf{movimientos de
+	Reidemeister}.  Hay tres de estos movimientos:  el primero se muestra en la
+	figura~\ref{fig:reidemeister1}, el segundo en la
+	figura~\ref{fig:reidemeister2} y el tercero en la
+	figura~\ref{fig:reidemeister3}. 
 
 \begin{theorem}[Reidemeister]
 	\index{Reidemeister!teorema de}
@@ -577,16 +575,15 @@ ver~\cite[\S 3.3]{MR2079925} para más información.
 
 \section{Coloraciones}
 \label{section:coloreos}
-
- \label{block:3coloring}
- Supongamos que queremos mostrar que un cierto nudo no es trivial. \textquestiondown Qué
- invariante sencillo podríamos obtener a partir de los tres movimientos de
- Reidemeister? Responderemos esta pregunta al introducir el \textbf{coloración 
- con tres colores}. Fijemos un conjunto de tres colores,
- digamos $\{\textsf{rojo},\textsf{verde},\textsf{azul}\}$.  Una proyección
- de un nudo es \textbf{coloreable con tres colores} si cada arco de la
- proyección puede colorearse con uno de los tres colores de tal forma que en
- cada cruce se ven los tres colores elegidos o únicamente uno de los tres. 
+\label{block:3coloring}
+Supongamos que queremos mostrar que un cierto nudo no es trivial. \textquestiondown Qué
+invariante sencillo podríamos obtener a partir de los tres movimientos de
+Reidemeister? Responderemos esta pregunta al introducir el \textbf{coloración 
+con tres colores}. Fijemos un conjunto de tres colores,
+digamos $\{\textsf{rojo},\textsf{verde},\textsf{azul}\}$.  Una proyección
+de un nudo es \textbf{coloreable con tres colores} si cada arco de la
+proyección puede colorearse con uno de los tres colores de tal forma que en
+cada cruce se ven los tres colores elegidos o únicamente uno de los tres. 
 
 \begin{figure}[ht]
 	\centering
@@ -658,22 +655,22 @@ de $\Z_3$.
 	de ecuaciones que resuelve el problema de la coloración con tres colores es el
 	siguiente:
 	\[
-		\begin{cases}
-			\begin{aligned}
-				2a-b-c&=0,\\
-				-a-b+2c&=0,\\
-				-a+2b-c&=0.
-			\end{aligned}
-		\end{cases}
+	\begin{cases}
+		\begin{aligned}
+			2a-b-c&=0,\\
+			-a-b+2c&=0,\\
+			-a+2b-c&=0.
+		\end{aligned}
+	\end{cases}
 	\]
 	La cantidad de coloraciones con tres colores del nudo $3_1$ es entonces la
 	cantidad de vectores que tiene el núcleo de la \textbf{matriz de coloraciones}
 	del nudo:
 	\begin{equation*}
 		C(3_1)=\begin{pmatrix}
-			2 & -1 & -1\\
-			-1 & -1 & 2\\
-			-1 & 2 & -1
+		2 & -1 & -1\\
+		-1 & -1 & 2\\
+		-1 & 2 & -1
 		\end{pmatrix}\in\Z_3^{3\times3}.
 	\end{equation*}
 
@@ -727,7 +724,6 @@ con coeficientes en $\Z_p$.
             de Reidemeister pues $c=2a-(2a-b)=b$.}
             \label{fig:coloringR2}
         \end{figure}
-
 
 		La figura~\ref{fig:coloringR3} prueba que la cantidad de
 		coloraciones es invariante bajo el tercer movimiento de Reidemeister
@@ -810,7 +806,7 @@ con coeficientes en $\Z_p$.
     figura~\ref{fig:knots} admiten coloraciones de Fox no triviales para
     $p\in\{3,5,7,11,13,17\}$. \textquestiondown Qué conclusiones puede obtener? 
 
-        \begin{table}[h]
+    \begin{table}[h]
 		\centering
         \begin{tabular}{|c|c|c|c|c|c|c|}
             \hline 
@@ -859,14 +855,15 @@ las nociones básicas respecto del grupo fundamental de un nudo referimos a
     El \textbf{grupo fundamental} $\pi_1(K)$ del nudo $K$ es el grupo 
     $\pi_1(\R^3\setminus K)$. 
 \end{definition}
-    \label{block:Wirtinger}
-	\begin{figure}
-   		\centering
-	    \includegraphics[scale=0.6]{images/crossings}
-        \caption{Una orientación da dos tipos de
-        cruce. En ambos casos, la relación de Wirtinger es $a_ia_ja_i^{-1}=a_k$.}
-        \label{fig:crossings}
-    \end{figure}
+
+\label{block:Wirtinger}
+\begin{figure}
+    \centering
+	\includegraphics[scale=0.6]{images/crossings}
+    \caption{Una orientación da dos tipos de
+    cruce. En ambos casos, la relación de Wirtinger es $a_ia_ja_i^{-1}=a_k$.}
+    \label{fig:crossings}
+\end{figure}
 
     Veamos cómo calcular el grupo fundamental de un nudo.  Supongamos que $K$
     es un nudo con $n$ cruces.  Etiquetamos los arcos con las variables
