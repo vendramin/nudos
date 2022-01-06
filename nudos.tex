@@ -183,19 +183,19 @@ solución encontrada por Alejandro Magno.
 
 La teoría de nudos, en principio, intenta entender los nudos que podríamos
 encontrarnos en la vida real. 
-El objetivo final de la teoría es obtener una clasificación completa de nudos a
-menos de deformaciones continuas. A simple vista, uno podría pensar entonces
+El objetivo final de la teoría es obtener una clasificación completa de los nudos, salvo
+deformaciones continuas. A simple vista, uno podría pensar entonces
 que la teoría de nudos es una divertida rama de la topología. Si bien esto es
 cierto, es necesario destacar que el estudio de los nudos se lleva a
 cabo gracias al uso de técnicas muy profundas que provienen de distintas ramas
 de la matemática como la geometría, el álgebra y el análisis. La teoría de
-nudos tiene además muchas aplicaciones en otras ciencias como la biología, la
+nudos tiene además muchas aplicaciones en otras ciencias, entre ellas la biología, la
 física y la criptografía. 
 
 Invitamos al lector a que tome un pedazo de cuerda y haga un nudo tal como el
 que vemos a la izquierda en la figura~\ref{fig:nudo}. Si pegamos los extremos
 de esa cuerda obtendremos una cuerda anudada que no tiene extremos tal como la
-que vemos a la derecha en la figura~\ref{fig:nudo}.
+que vemos a la derecha en misma figura.
 
 \begin{figure}
     \centering
@@ -208,7 +208,7 @@ que vemos a la derecha en la figura~\ref{fig:nudo}.
 experimentación se hace más o menos evidente que ese nudo podrá deshacerse
 solamente si nos permitimos cortar la cuerda. Sin embargo, si aceptamos
 soluciones como la que encontró Alejandro Magno, entonces todo nudo puede
-desatarse y el problema de clasificar nudos --que resulta ser muy poco
+desatarse y el problema de clasificar nudos --que bajo estas condiciones resulta ser muy poco
 interesante-- queda resuelto: todo nudo es trivial.  
 
 \textquestiondown Qué pasa si no está permitido cortar cuerdas?
@@ -227,10 +227,10 @@ mediante el uso de invariantes.
 
 \subsection*{Agradecimientos}
 
-Estas notas corresponden a un minicurso dictado en el Encuentro Nacional de
+Este texto corresponde a un minicurso dictado en el Encuentro Nacional de
 Álgebra, elENA VII, La Falda, Córdoba, Argentina, 2014.  Agradezco a Agustín
 García, Jonathan Barmak, Edwin Clark, Marco Farinati, César Galindo, Juliana
-García Galofre, César Massri y Masahico Saito por los comentarios y las
+García Galofre, César Massri y Masahico Saito los comentarios y las
 correcciones. Para terminar, quiero expresar mi agradecimiento a un anónimo y
 cuidadoso revisor; sus comentarios fueron de gran ayuda. 
 
@@ -249,9 +249,9 @@ topológico de distinguir nudos al lenguaje de la combinatoria.
 
 \begin{definition}
     \index{Nudo}
-    Un nudo (en $\R^3$) es 
+    Un \textbf{nudo} (en $\R^3$) es 
 	una función inyectiva y continua $S^1\to\R^3$, donde
-	$S^1=\{(x,y)\in\R^2\mid x^2+y^2=1\}$. 
+	$S^1=\{(x,y)\in\R^2\mid x^2+y^2=1\}$ es la circunferencia. 
 \end{definition}
 
 En el conjunto de nudos definimos la relación de equivalencia dada por
@@ -307,17 +307,18 @@ trabajaremos principalmente con nudos orientados.
     \index{Diagrama de un nudo}
 	Sea $K$ un nudo.  Consideremos la proyección de $K$ en el plano dada por
     \[
-	\pi\colon(x,y,z)\mapsto(x,y,0).
+	\pi\colon(x,y,z)\mapsto(x,y).
 	\]
 	Un punto $p\in\pi(K)$ es un \textbf{punto
     múltiple} si $\pi^{-1}(p)$ contiene más de un punto de $K$. La
     \textbf{multiplicidad} de $p$ se define como el cardinal del conjunto
     $\pi^{-1}(p)\cap K$. Una proyección de $K$ en el plano se dice
     \textbf{genérica} si tiene las siguientes propiedades: 1) hay una cantidad finita de puntos
-    de multiplicidad mayor a uno, 2) no hay puntos de multiplicidad mayor a
+    de multiplicidad mayor a uno, 2) no hay puntos de multiplicidad mayor que 
     dos, y 3) no hay puntos dobles donde uno de los puntos es un vértice. La
     figura~\ref{fig:wrong_crossings} muestra algunos ejemplos de cruces no
-    admitidos en una proyección genérica.
+    admitidos en una proyección genérica, el de la izquierda por ser un punto triple y los otros dos por presentar
+    vértices. 
  
 	\begin{figure}[ht]
         \centering
@@ -336,7 +337,8 @@ trabajaremos principalmente con nudos orientados.
     al diagrama que indique la orientación.
 
     \index{Nudo!trivial}
-    Cualquier nudo equivalente a $S^1$ será considerado como el \textbf{nudo
+    Cualquier nudo equivalente a $S^1$ (visto como $S^1=\{(x,y,0)\in\R^3:x^2+y^2=1\}$) 
+    será considerado como el \textbf{nudo
     trivial}.  En la práctica, no siempre es fácil reconocer la trivialidad de
     un nudo. En la figura~\ref{fig:trivial} vemos tres proyecciones distintas
     del nudo trivial. Una proyección aún más curiosa del nudo trivial puede
@@ -403,7 +405,7 @@ trabajaremos principalmente con nudos orientados.
 
 El teorema de Reidemeister también puede utilizarse para nudos orientados si se
 consideran todas las configuraciones posibles para los diagramas de las
-figuras~\ref{fig:reidemeister1}--\ref{fig:reidemeister3} con respecto a las
+figuras~\ref{fig:reidemeister1}, \ref{fig:reidemeister2} y \ref{fig:reidemeister3} con respecto a las
 posibles orientaciones.  El teorema de Reidemeister es el núcleo de la teoría
 combinatoria de nudos, ya que nos permite, por ejemplo, pensar que un nudo es
 una clase de equivalencia de diagramas, donde dos diagramas son equivalentes si
@@ -420,7 +422,7 @@ Reidemeister.
     \end{align*}
 	El nudo trébol, tal como lo vemos a la izquierda en la
 	figura~\ref{fig:trefoil}, se denota por el símbolo $3_1$.  Queda como
-	ejercicio demostrar que los nudos de la figura~\ref{fig:trefoil} son
+	ejercicio demostrar que los dos nudos de la figura~\ref{fig:trefoil} son
 	equivalentes.
 \end{example}
 
@@ -439,7 +441,7 @@ Reidemeister.
 		y&=(2+\cos(2t))\sin(3t),\\
 		z&=\sin(4t),
 	\end{align*}
-	y una proyección puede verse en la figura~\ref{fig:4_1:unoriented}.
+	y se puede ver una proyección en la figura~\ref{fig:4_1:unoriented}.
 	\begin{figure}[ht]
 		\centering
 		\includegraphics[scale=0.7]{images/4_1unoriented}
@@ -468,7 +470,7 @@ $3_1$ y $m(3_1)$ no son equivalentes.
 \end{figure}
 
 Dos nudos orientados $K$ y $L$ serán equivalentes si existe una isotopía
-entre $K$ y $L$ compatible la orientación.  Si $K$ es un nudo orientado, el
+entre $K$ y $L$ compatible las orientaciones.  Si $K$ es un nudo orientado, el
 \textbf{reverso} $r(K)$ de $K$ es $K$ como conjunto pero con la orientación
 opuesta. Los operadores $r$ y $m$ son involuciones en el espacio de nudos y
 generan un grupo isomorfo a $\Z_2\times\Z_2$.
@@ -578,12 +580,12 @@ ver~\cite[\S 3.3]{MR2079925} para más información.
 \label{block:3coloring}
 Supongamos que queremos mostrar que un cierto nudo no es trivial. \textquestiondown Qué
 invariante sencillo podríamos obtener a partir de los tres movimientos de
-Reidemeister? Responderemos esta pregunta al introducir el \textbf{coloración 
+Reidemeister? Responderemos esta pregunta al introducir la \textbf{coloración 
 con tres colores}. Fijemos un conjunto de tres colores,
 digamos $\{\textsf{rojo},\textsf{verde},\textsf{azul}\}$.  Una proyección
 de un nudo es \textbf{coloreable con tres colores} si cada arco de la
 proyección puede colorearse con uno de los tres colores de tal forma que en
-cada cruce se ven los tres colores elegidos o únicamente uno de los tres. 
+cada cruce se vean los tres colores elegidos o únicamente uno de los tres. 
 
 \begin{figure}[ht]
 	\centering
@@ -591,7 +593,8 @@ cada cruce se ven los tres colores elegidos o únicamente uno de los tres.
     \caption{Ralph Fox (1913--1973)}
 \end{figure}
 
-Todo nudo puede colorearse trivialmente con un solo color. 
+Podemos colorear cualquier nudo usando un sólo color. Esto nos da una coloración 
+con tres colores que llamaremos \textbf{coloración trivial}. 
 
 La cantidad de coloraciones con tres colores da un invariante de nudos. Este
 resultado es un caso particular del teorema~\ref{theorem:fox} que veremos más
@@ -637,7 +640,7 @@ Observemos que esta ecuación puede reescribirse como
 donde el segmento que pasa por arriba está coloreado con el color $a$. 
 
 Cada coloración del nudo $K$ será una solución del sistema de ecuaciones
-formado por las ecuaciones \eqref{eq:3colors}. En particular, una
+formado por una ecuación análoga a \eqref{eq:3colors} por cada cruce. En particular, una
 coloración no trivial será una solución que involucre todos los elementos
 de $\Z_3$. 
 
@@ -745,7 +748,7 @@ con coeficientes en $\Z_p$.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.7]{images/labels4_1}
-	\caption{El nudo $4_1$.}
+	\caption{Una coloración del nudo $4_1$.}
 	\label{fig:labels4_1}
 \end{figure}
 
@@ -852,7 +855,7 @@ las nociones básicas respecto del grupo fundamental de un nudo referimos a
 
 \begin{definition}
     \index{Grupo!fundamental de un nudo}
-    El \textbf{grupo fundamental} $\pi_1(K)$ del nudo $K$ es el grupo 
+    El \textbf{grupo fundamental} $\pi_1(K)$ del nudo $K$ es el grupo de homotopía 
     $\pi_1(\R^3\setminus K)$. 
 \end{definition}
 
@@ -872,8 +875,8 @@ las nociones básicas respecto del grupo fundamental de un nudo referimos a
     Por cada cruce $\chi$ del diagrama como el que vemos en la
     figura~\ref{fig:crossings}, consideramos la \textbf{relación de Wirtinger}
     $r_\chi=1$, donde 
-    $r_\chi = a_ia_ja_i^{-1}a_k^{-1}$.
-	El grupo fundamental de
+    $r_\chi = a_ia_ja_i^{-1}a_k^{-1}$. Como nos indice el siguiente teorema, 
+	el grupo fundamental de
     $K$ es isomorfo al grupo dado por los generadores $a_1,a_2,a_3\dots$ y
     las relaciones de Wirtinger.  Esta presentación del grupo
     fundamental se conoce como la \textbf{presentación de Wirtinger}.
@@ -935,14 +938,14 @@ las nociones básicas respecto del grupo fundamental de un nudo referimos a
     \]
 
     Vamos a utilizar el grupo $\pi_1(3_1)$ para dar otra demostración de la no
-    trivialidad de $3_1$.  Como existe un morfismo de grupos
+    trivialidad de $3_1$.  Como existe un morfismo sobreyectivo de grupos
     $\pi_1(3_1)\to\Sym_3$ tal que 
     \[
         a_1\mapsto(12),\quad
         a_2\mapsto(23),\quad
         a_3\mapsto(13),
     \]
-    y el grupo simétrico $\Sym_3$ es un grupo no abeliano, se sigue que
+    y el grupo simétrico $\Sym_3$ no es abeliano, se sigue que
     $\pi_1(3_1)$ es un grupo no abeliano. En particular
     $\pi_1(3_1)\not\simeq\Z$ y entonces el nudo $3_1$ no es equivalente al nudo
     trivial. 
@@ -1012,7 +1015,7 @@ isomorfos.
             2 & 0
         \end{pmatrix}.
     \end{align*}
-    Como el grupo $\SL(2,\Z_3)$ no es abeliano, se sigue que $\pi_1(4_1)$ no es
+    Como las imágenes de $x$ e $y$ no conmutan, se sigue que $\pi_1(4_1)$ no es
     abeliano. En particular $\pi_1(4_1)\not\simeq\Z$ y entonces $4_1$ no es el
     nudo trivial.
 \end{example}
@@ -1056,9 +1059,9 @@ es un invariante que generaliza al grupo fundamental y a los invariantes por
 coloraciones.
 
 Los quandles son estructuras algebraicas que modelan la conjugación en un
-grupo. La primera aparición de cierta familia de quandles fue en 1943
+grupo. La primera aparición de una familia de quandles se produjo en 1943
 cuando Mituhisa Takasaki introdujo los quandles involutivos --los llamó
-\emph{keis}-- con el fin de entender reflexiones. En 1959, los matemáticos
+\emph{keis}-- con el fin de entender las reflexiones. En 1959, los matemáticos
 ingleses John Conway y Gavil Wraith, después de un interesante intercambio
 de cartas e ideas, definieron los \emph{wracks}. La idea de Conway y Wraith
 es que un wrack (hoy llamado simplemente \emph{pecio} o \emph{rack} en
@@ -1068,8 +1071,8 @@ introdujo los \emph{quandles} con el fin de producir invariantes de nudos.
 Inspirado en la presentación de Wirtinger del grupo fundamental de un nudo,
 Joyce construyó el \emph{quandle fundamental} de un nudo y probó que esta
 construcción da un buen invariante de nudos no orientados.  Ese mismo año,
-y en forma independiente, Sergei Matveev también introdujo los quandles
---los llamó \emph{grupoides distributivos}-- y probó un resultado similar
+y de forma independiente, Sergei Matveev también introdujo los quandles
+--que él llamó \emph{grupoides distributivos}-- y probó un resultado similar
 al de Joyce.  En 1988, para estudiar ciertos aspectos de la teoría de
 singularidades de curvas, el matemático alemán Egbert Brieskorn introdujo
 una estructura equivalente a la de Conway y Wraith: los \emph{automorphic
@@ -1088,7 +1091,7 @@ sets}.
 		conjunto no vacío con una operación binaria $X\times X\to X$,
 		$(x,y)\mapsto x\triangleright y$, tal que
 		\begin{align}
-			& \text{cada $\varphi_x\colon X\to X,\;y\mapsto x\triangleright y$ es biyectiva},&&\\
+			& \varphi_x\colon X\to X,\;y\mapsto x\triangleright y\text{ es biyectiva},&&\text{ para todo $x\in X$},\\
 			& x\triangleright (y\triangleright z)=(x\triangleright y)\triangleright (x\triangleright z) && \text{para todo $x,y,z\in X$},\\
 			& x\triangleright x=x && \text{para todo $x\in X$}.
 		\end{align}
@@ -1096,6 +1099,10 @@ sets}.
 
 	Utilizaremos la siguiente notación: $x\triangleright^{-1}
 	y=\varphi_x^{-1}(y)$. 
+
+\begin{example}
+    Si $G$ es un grupo, entonces $G$ es un quandle con $x\triangleright y=xyx^{-1}$ para todo $x,y\in X$.  
+\end{example}
 
 	El artículo de Joyce utiliza una definición de quandle levemente distinta a
 	la que damos en este artículo, ya que Joyce usa acciones a derecha y no
@@ -1281,7 +1288,8 @@ sets}.
 	\index{Teorema!de Matveev}
 	\index{Matveev!teorema de}
 		Si $K$ y $L$ son dos nudos, entonces 
-		$Q(K)\simeq Q(L)$ si y sólo si $K=L$ o $L=rm(K)$.  
+		$Q(K)\simeq Q(L)$ si y sólo si $L=K$ o $L=rm(K)$, donde $rm(K)=r(m(K))$ es el reverso de la imagen
+		especular de $K$.
 	\end{theorem}
 
 	\begin{proof}
@@ -1359,7 +1367,7 @@ sets}.
 	\label{block:Q(6_2):fundamental_quandle}
 	\label{block:Q(6_3):fundamental_quandle}
 	\index{Nudo!$6_1$}
-    El fundamental $Q(6_1)$ del nudo $6_1$ de la figura~\ref{fig:6_1} es
+    El quandle fundamental $Q(6_1)$ del nudo $6_1$ de la figura~\ref{fig:6_1} es
 	\begin{multline}
 		Q(6_1)=\langle a_1,\dots,a_6:
 		a_1\triangleright a_4=a_3,\;
@@ -1534,7 +1542,7 @@ sets}.
 	\end{figure}
 	
 	\index{Nudo!$7_5$}
-	Para el nudo $7_5$ tenemos
+	Para el nudo $7_5$ se obtiene 
 	\begin{multline}
 		Q(7_5)=\langle a_1,\dots,a_7:
 		a_1\triangleright a_4=a_3,\;
@@ -1546,7 +1554,7 @@ sets}.
 		a_6\triangleright a_4=a_5\rangle,
 	\end{multline}
     donde la ecuación $a_6\triangleright a_4=a_5$ corresponde al único cruce
-    negastivo del diagrama.  
+    negativo del diagrama.  
 	\index{Nudo!$7_6$}
 	Para el nudo $7_6$ tenemos
 	\begin{multline}
@@ -1601,7 +1609,7 @@ sets}.
 		\end{minipage}
 	\end{figure}
 
-	Presentemos el quandle fundamental de la imagen especular del nudo $3_1$ de
+	Presentemos el quandle fundamental de la imagen especular del nudo $3_1$, que vemos en 
 	la figura~\ref{fig:3_1m}. El diagrama tiene tres cruces negativos y el
 	quandle fundamental es
 	\begin{align*}
@@ -1691,7 +1699,7 @@ sets}.
     \begin{figure}[h]
 		\centering
 	    \includegraphics[scale=0.6]{images/quandlecrossing}
-		\caption{La regla para colorear con un quandle. Notar que $a_i\triangleright a_j=a_k$ si y sólo si $a_i\triangleright^{-1}a_k=a_j$.}
+		\caption{La regla para colorear con un quandle. Nótese que $a_i\triangleright a_j=a_k$ si y sólo si $a_i\triangleright^{-1}a_k=a_j$.}
         \label{fig:quandle_crossing}
     \end{figure}
 
@@ -1706,9 +1714,10 @@ sets}.
     coloraciones del nudo $K$ con el quandle $X$ (las coloraciones triviales).
 
 \begin{example}
-    La coloración con tres colores es en realidad el invariante asociado al
-    quandle $\D_3$. La coloración de Fox con $p$ colores 
-    es en realidad la coloración asociada al quandle $\D_p$. 
+    El número de coloraciones con tres colores se puede interpretar como 
+    el invariante asociado al
+    quandle $\D_3$. Podemos ver la coloración de Fox con $p$ colores 
+    como la coloración asociada al quandle $\D_p$. 
 \end{example}
 
 \begin{example}
@@ -1989,7 +1998,7 @@ expresión
 	\end{equation}
 	donde el producto se toma sobre todos los cruces $\chi$ que tiene el
 	diagrama del nudo $K$ y la suma se toma sobre todos las coloraciones
-	$\mathcal{C}$ de $K$ dados por el quandle $X$.  
+	$\mathcal{C}$ de $K$ dadas por el quandle $X$.  
 \end{definition}
 
 La fórmula~\eqref{eq:cocycle_invariant} define un elemento de $\Z[A]$, el
@@ -2040,15 +2049,16 @@ anillo de grupo de $A$.
         \[
         f(a,b\triangleright c)f(b,c)f(a,b)=f(a,b)f(a\triangleright b,a\triangleright c)f(a,c).
         \]
-        Como $A$ es un grupo abeliano, al cancelar $f(a,b)$ en ambos miembros,
+        Como $A$ es un grupo abeliano, al cancelar $f(a,b)$ en ambos miembros 
         obtenemos el resultado deseado.
     \end{proof}
 \end{theorem}
 
 \label{block:cocycles_and_colorings}
-Los invariantes por quandles y $2$-cociclos extienden a los invariantes dados por
-coloraciones con quandles: si $f$ es un coborde entonces
-$\Phi_{X,f}(K)=\mathrm{Col}_X(K)$ para todo nudo $K$.	Esta afirmación puede
+Los invariantes por quandles y $2$-cociclos son una extensión de los invariantes dados por
+coloraciones con quandles: si $f$ es un coborde (y por tanto cohomólogo al 2-cociclo constante igual a uno) 
+entonces
+$\Phi_{X,f}(K)=\Phi_{X,1}(K)=\mathrm{Col}_X(K)$ para todo nudo $K$.	Esta afirmación puede
 generalizarse: si $f$ y $g$ son cohomólogos entonces $\Phi_{X,f}=\Phi_{X,g}$.
 Para las demostración referimos a la proposición 4.5 de~\cite{MR1990571}.
 
@@ -2069,7 +2079,7 @@ Para las demostración referimos a la proposición 4.5 de~\cite{MR1990571}.
 	\label{exa:2cocycle:3_1andm(3_1)}
     En este ejemplo vamos a distinguir el nudo $3_1$ de su imagen especular
     $m(3_1)$, ver figura~\ref{fig:trefoil_and_mirror}.  Consideremos el quandle
-    $X$ y $f$ el $2$-cociclo de $X$ que vimos en el
+    $X$ y el $2$-cociclo $f$ de $X$ que vimos en el
     ejemplo~\ref{exa:4cyclesS4}.  Un cálculo directo muestra que
     \[
     \Phi_{X,f}(3_1)=6+24\sigma^3,\quad
@@ -2083,8 +2093,8 @@ Para las demostración referimos a la proposición 4.5 de~\cite{MR1990571}.
     \index{Nudo!de la abuela}
     \index{Nudo!cuadrado}
 	Vamos a dar otra prueba de que el nudo de la abuela no es equivalente al nudo cuadrado. 
-    Como hicimos en el ejemplo anterior, vamos a utilizar el quandle $X$ y $f$
-    el $2$-cociclo de $X$ que vimos en el ejemplo~\ref{exa:4cyclesS4}.  El
+    Como hicimos en el ejemplo anterior, vamos a utilizar el quandle $X$ y 
+    el $2$-cociclo $f$ de $X$ que vimos en el ejemplo~\ref{exa:4cyclesS4}.  El
     invariante dado por $X$ y el $2$-cociclo $f$ para el nudo de la abuela es
     \[
     \Phi_{X,f}(3_1\#3_1)=6+48\sigma+96\sigma^2,
